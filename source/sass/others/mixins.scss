@@ -1,0 +1,49 @@
+@mixin container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: $offset;
+  padding-right: $offset;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 1350px;
+    width: 1200px;
+    max-width: 1442px;
+    // padding-left: $desktop-offset;
+    // padding-right: $desktop-offset;
+  }
+}
+
+@mixin unlist {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+@mixin fitness-title {
+  padding: 0;
+  margin: 0 auto;
+
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 49px;
+  font-weight: bold;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $tablet-width-max) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
