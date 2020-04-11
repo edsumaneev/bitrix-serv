@@ -1,57 +1,57 @@
 @font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Regular"),
-    local("BebasNeueRegular"),
-    url("../fonts/bebasneueregular.woff2") format("woff2"),
-    url("../fonts/bebasneueregular.woff") format("woff"),
-    url("../fonts/bebasneueregular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: local("Roboto"),
+    local("Roboto-Regular"),
+    url("../fonts/Roboto.woff2") format("woff2"),
+    url("../fonts/Roboto.woff") format("woff"),
+    url("../fonts/Roboto.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Bebas Neue";
-  src: local("Bebas Neue Bold"),
-    local("BebasNeueBold"),
-    url("../fonts/bebasneuebold.woff2") format("woff2"),
-    url("../fonts/bebasneuebold.woff") format("woff"),
-    url("../fonts/bebasneuebold.ttf") format("truetype");
+  font-family: "Roboto";
+  src: local("Roboto Bold"),
+    local("Roboto-Bold"),
+    url("../fonts/Robotobold.woff2") format("woff2"),
+    url("../fonts/Robotobold.woff") format("woff"),
+    url("../fonts/Robotobold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  src: local("Roboto Condensed"),
-    local("RobotoCondensed-Regular"),
-    url("../fonts/Robotocondensed.woff2") format("woff2"),
-    url("../fonts/Robotocondensed.woff") format("woff"),
-    url("../fonts/Robotocondensed.ttf") format("truetype");
+  font-family: "Oswald";
+  src: local("Oswald ExtraLight"),
+    local("Oswald-ExtraLight"),
+    url("../fonts/Oswaldextralight.woff2") format("woff2"),
+    url("../fonts/Oswaldextralight.woff") format("woff"),
+    url("../fonts/Oswaldextralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"),
+    local("Oswald-Regular"),
+    url("../fonts/Oswaldregular.woff2") format("woff2"),
+    url("../fonts/Oswaldregular.woff") format("woff"),
+    url("../fonts/Oswaldregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
-  src: local("Roboto Condensed Bold"),
-    local("RobotoCondensed-Bold"),
-    url("../fonts/Robotocondensedbold.woff2") format("woff2"),
-    url("../fonts/Robotocondensedbold.woff") format("woff"),
-    url("../fonts/Robotocondensedbold.ttf") format("truetype");
+  font-family: "Oswald";
+  src: local("Oswald Bold"),
+    local("Oswald-Bold"),
+    url("../fonts/Oswaldbold.woff2") format("woff2"),
+    url("../fonts/Oswaldbold.woff") format("woff"),
+    url("../fonts/Oswaldbold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
-
-// @font-face {
-//   font-family: "Roboto";
-//   src: local("Roboto"),
-//     local("Roboto-Regular"),
-//     url("../fonts/Roboto.woff2") format("woff2"),
-//     url("../fonts/Roboto.woff") format("woff"),
-//     url("../fonts/Roboto.ttf") format("truetype");
-//   font-weight: 400;
-//   font-style: normal;
-// }
 
 body {
   width: 100%;
@@ -59,14 +59,13 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: $roboto-cond, "Arial", sans-serif;
-  font-size: 16px;
-  // line-height: 22px;
+  font-family: $roboto, "Arial", sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: normal;
-  color: $text-blue;
+  color: $white;
 
-  background-color: $white;
+  background-color: $bg-page;
 }
 
 img {

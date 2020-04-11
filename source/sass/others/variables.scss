@@ -1,12 +1,8 @@
-$text-blue: #102654;
-$bg-blue: #1c3374;
-$bg-red: #ed0233;
-$bg-footer: #030a1a;
-$border: linear-gradient(45deg, rgba(208, 11, 67, 1) 35%, rgba(5, 53, 157, 1) 100%);
+$bg-page: #1e1d1e;
+$bg-red: #b70046;
 $white: #ffffff;
 
-$roboto-cond: "Roboto Condensed";
-
+$roboto: "Roboto";
 
 $mobile-width: 320px;
 $mobile-width-max: 767px;
@@ -19,3 +15,7 @@ $offset: 15px;
 $tablet-offset: 45px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+// $text-blue: #102654;
+// $bg-footer: #030a1a;
+// $border: linear-gradient(45deg, rgba(208, 11, 67, 1) 35%, rgba(5, 53, 157, 1) 100%);
