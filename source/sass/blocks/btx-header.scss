@@ -105,6 +105,7 @@
   // position: relative;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 100px;
   max-width: $desktop-wrapper;
 }
 
@@ -159,11 +160,34 @@
 .btx-header__features li::before {
   position: absolute;
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   left: 0;
-  top: -5px;
+  top: -7px;
 
   background: url("../img/icon-check.svg") 50% 50%;
   background-repeat: no-repeat;
+}
+
+.btx-header__skills {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 1050px;
+}
+
+.btx-header__skills ul {
+  @include unlist();
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.btx-header__skills li {
+  width: 25%;
+}
+
+.btx-header__skills p {
+  padding: 0;
+  margin: 0;
 }
