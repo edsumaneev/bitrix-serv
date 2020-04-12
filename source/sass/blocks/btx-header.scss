@@ -1,0 +1,172 @@
+// .btx-header {
+//   position: relative;
+// }
+
+.btx-header__top {
+  z-index: 5;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-bottom: 88px;
+
+  max-width: $desktop-wrapper;
+}
+
+.btx-header__top img {
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+}
+
+.btx-header__top img:hover {
+  opacity: 0.8;
+}
+
+.btx-header__top a:hover {
+  color: $bg-red;
+}
+
+.btx-header__top a:active {
+  opacity: 0.8;
+}
+
+.btx-header__nav,
+.btx-header__contacts {
+  @include unlist();
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btx-header__contacts a {
+  font-size: 0;
+
+  cursor: pointer;
+}
+
+.btx-header__nav a {
+  padding: 0;
+  margin: 0;
+
+  font-family: $roboto, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  text-decoration: none;
+}
+
+.btx-header__nav {
+  min-width: 495px;
+}
+
+.btx-header__contacts {
+  min-width: 127px;
+}
+
+.btx-header__git {
+  fill: none;
+}
+
+.btx-header__phone,
+.btx-header__mail {
+  fill: $bg-red;
+}
+
+.btx-header__git {
+  stroke: $white;
+}
+
+.btx-header__phone:hover,
+.btx-header__mail:hover {
+  fill: $white;
+  stroke: $bg-red;
+}
+
+.btx-header__git:hover {
+  stroke: $bg-red;
+}
+
+.btx-header__phone:active,
+.btx-header__mail:active,
+.btx-header__git:active {
+  opacity: 0.3;
+}
+
+.btx-header__git:active {
+  stroke: $white;
+}
+
+.btx-header__title {
+  // @include container();
+  // position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: $desktop-wrapper;
+  // max-width: 50%;
+}
+
+.btx-header__title h1 {
+  position: relative;
+  padding: 0;
+  margin: 0 0 53px 0;
+  width: 60%;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 120%;
+
+  span {
+    font-weight: 200;
+  }
+}
+
+.btx-header__title h1::after {
+  position: absolute;
+  content: "";
+  top: -160px;
+  left: 460px;
+  width: 900px;
+  height: 897px;
+
+  overflow: hidden;
+  background: url("../img/header-img-d@1x.png");
+}
+
+.btx-header__features {
+  @include unlist;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  max-width: 600px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.btx-header__features li {
+  position: relative;
+  padding: 0 0 0 45px;
+  margin: 0 70px 50px 0;
+  min-width: 160px;
+}
+
+.btx-header__features li::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: -5px;
+
+  background: url("../img/icon-check.svg") 50% 50%;
+  background-repeat: no-repeat;
+}

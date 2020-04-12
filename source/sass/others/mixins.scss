@@ -6,15 +6,15 @@
   width: 320px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 90%;
     padding-left: $tablet-offset;
     padding-right: $tablet-offset;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: 1200px) {
     // width: 1350px;
-    width: 1200px;
-    max-width: 1442px;
+    width: $desktop-wrapper;
+    max-width: $desktop-width;
     // padding-left: $desktop-offset;
     // padding-right: $desktop-offset;
   }
