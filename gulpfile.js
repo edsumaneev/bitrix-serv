@@ -22,18 +22,18 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
-    // .pipe(csso())
-    // .pipe(rename("style.min.css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
-    // .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
-    // server: "build/",
+    // server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -109,5 +109,5 @@ gulp.task("clean", function () {
 
 // gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "images"));
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("server"));
-// gulp.task("start", gulp.series("build", "server"));
+// gulp.task("start", gulp.series("server"));
+gulp.task("start", gulp.series("build", "server"));

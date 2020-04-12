@@ -38,7 +38,7 @@
 .btx-header__contacts {
   @include unlist();
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -62,24 +62,22 @@
 }
 
 .btx-header__nav {
-  min-width: 495px;
+  min-width: 496px;
+  margin-left: 40px;
 }
 
 .btx-header__contacts {
-  min-width: 127px;
+  min-width: 140px;
 }
 
 .btx-header__git {
   fill: none;
+  stroke: $white;
 }
 
 .btx-header__phone,
 .btx-header__mail {
   fill: $bg-red;
-}
-
-.btx-header__git {
-  stroke: $white;
 }
 
 .btx-header__phone:hover,
@@ -107,15 +105,14 @@
   // position: relative;
   display: flex;
   margin: 0 auto;
-  width: $desktop-wrapper;
-  // max-width: 50%;
+  max-width: $desktop-wrapper;
 }
 
 .btx-header__title h1 {
   position: relative;
   padding: 0;
   margin: 0 0 53px 0;
-  width: 60%;
+  max-width: 60%;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
