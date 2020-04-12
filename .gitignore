@@ -13,4 +13,4 @@ temp.*
 temp*.*
 *.temp
 .jsbeautifyrc
-build/
+# build/
