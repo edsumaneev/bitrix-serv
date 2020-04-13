@@ -42,3 +42,23 @@
     opacity: 1;
   }
 }
+
+.btx-advantages__item h3 {
+  margin-bottom: 10px;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.btx-advantages__item p {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+
+  opacity: 0.5;
+}
