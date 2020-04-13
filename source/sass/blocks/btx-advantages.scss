@@ -18,14 +18,20 @@
 }
 
 .btx-advantages__list li {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding-left: 86px;
   margin-bottom: 20px;
   max-width: 35%;
 }
 
 .btx-advantages__item svg {
+  position: absolute;
+  left: 0;
+
   fill: $white;
+  opacity: 0.5;
 }
 
 .btx-advantages__item:hover {
@@ -33,5 +39,6 @@
 
   svg {
     fill: $bg-red;
+    opacity: 1;
   }
 }
