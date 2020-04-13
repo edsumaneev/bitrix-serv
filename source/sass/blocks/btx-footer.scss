@@ -1,0 +1,55 @@
+.btx-footer {
+  padding: 44px 0;
+
+  background-color: $bg-gray;
+}
+
+.btx-footer__wrapper ul {
+  @include unlist();
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: $desktop-wrapper;
+}
+
+.btx-footer__wrapper a,
+.btx-footer__wrapper h3,
+.btx-footer__wrapper p {
+  padding: 0;
+  margin: 0;
+}
+
+.btx-footer__wrapper h3 {
+  margin-bottom: 10px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 163.4%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.btx-footer__wrapper a,
+.btx-footer__wrapper p {
+  color: $white;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 163.4%;
+
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.btx-footer__wrapper a:hover {
+  color: $bg-red;
+
+  cursor: pointer;
+}

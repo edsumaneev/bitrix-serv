@@ -1,0 +1,32 @@
+.btx-links {
+  padding-top: 140px;
+  padding-bottom: 50px;
+
+  background-color: $bg-dark;
+}
+
+.btx-links__wrapper {
+  @include unlist();
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  // margin-bottom: 120px;
+  max-width: $desktop-wrapper;
+}
+
+.btx-links__wrapper li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 70px;
+  width: 20%;
+  opacity: 0.3;
+}
+
+.btx-links__wrapper li:hover {
+  opacity: 1;
+
+  cursor: pointer;
+}
