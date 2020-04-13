@@ -1,6 +1,7 @@
 .btx-stuff {
   position: relative;
   margin: 0 auto;
+  margin-bottom: 200px;
   max-width: $desktop-wrapper;
 }
 
@@ -19,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: $desktop-wrapper;
 }
 
 .btx-stuff__item {

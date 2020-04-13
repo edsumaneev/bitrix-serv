@@ -1,0 +1,25 @@
+// .btx-advantages {}
+.btx-advantages__wrapper {
+  margin: 0 auto;
+  max-width: $desktop-wrapper;
+}
+
+.btx-advantages__list {
+  @include unlist();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.btx-advantages__list h3,
+.btx-advantages__list p {
+  padding: 0;
+  margin: 0;
+}
+
+.btx-advantages__list li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  max-width: 35%;
+}
