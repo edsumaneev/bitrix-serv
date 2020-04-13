@@ -1,0 +1,51 @@
+.btx-about__wrapper {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  max-width: $desktop-wrapper;
+}
+
+.btx-about__wrapper h3,
+.btx-about__wrapper span {
+  padding: 0;
+  margin: 0;
+}
+
+.btx-about__wrapper ul {
+  @include unlist();
+  display: flex;
+  justify-content: space-between;
+}
+
+.btx-about__wrapper li {
+  width: 20%;
+}
+
+.btx-about__wrapper h3 {
+  position: relative;
+  margin-bottom: 50px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.btx-about__wrapper h3::after {
+  position: absolute;
+  content: "";
+  bottom: -25px;
+  left: 0;
+  width: 250px;
+  height: 0;
+
+  border: 2px solid $bg-red;
+}
+
+.btx-about__wrapper span {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+}
