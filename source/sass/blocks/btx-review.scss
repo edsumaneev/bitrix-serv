@@ -21,3 +21,35 @@
 .btx-review__video span {
   font-weight: bold;
 }
+
+.btx-review__wrapper--type2 h4,
+.btx-review__wrapper--type2 p {
+  padding: 0;
+  margin: 0;
+}
+
+.btx-review__wrapper--type2 span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 204px;
+  height: 297px;
+
+  border-radius: 3px;
+  background-color: $bg-gray;
+}
+
+.btx-review__wrapper--type2 ul {
+  @include unlist();
+  display: flex;
+  justify-content: space-between;
+
+  max-width: $desktop-wrapper;
+}
+
+.btx-review__wrapper--type2 li {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 23%;
+
+  text-align: center;
+}

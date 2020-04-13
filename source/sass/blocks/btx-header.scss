@@ -171,23 +171,38 @@
 
 .btx-header__skills {
   margin: 0 auto;
-  margin-bottom: 134px;
+  margin-bottom: 110px;
   max-width: 1050px;
 }
 
 .btx-header__skills ul {
   @include unlist();
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
 
 .btx-header__skills li {
-  width: 25%;
+  padding-left: 48px;
+  width: 16%;
+
+  border-left: 1px solid rgba($color: $white, $alpha: 0.2);
+  // border-left: 1px solid $bg-gray;
+}
+
+.btx-header__skills img {
+  margin-bottom: 20px;
+}
+
+.btx-header__skills li:first-child {
+  padding-left: 0;
+  border: none;
 }
 
 .btx-header__skills p {
   padding: 0;
   margin: 0;
+
+  max-width: 150px;
 }
