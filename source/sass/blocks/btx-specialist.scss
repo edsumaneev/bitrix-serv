@@ -4,7 +4,7 @@
 
 .btx-specialist__row {
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: $desktop-wrapper;
 }
 
 .btx-specialist__row ul {
@@ -59,7 +59,7 @@
 .btx-specialist__column {
   display: flex;
   margin: 0 auto;
-  max-width: $desktop-width;
+  max-width: $desktop-wrapper;
 }
 
 .btx-specialist__column ul {
