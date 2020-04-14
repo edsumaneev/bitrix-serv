@@ -7,16 +7,16 @@ $('.btx-staff__slider').slick({
   // определяем скорость перелистывания
   slidesToShow: 4,
   //количество слайдов для показа
-  slidesToScroll: 2,
+  slidesToScroll: 4,
   //сколько слайдов за раз перелистнется
   responsive: [{
-    breakpoint: 1199,
+    breakpoint: 1204,
     //сообщает, при какой ширине экрана нужно включать настройки
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 3,
       // centerMode: true
-      // infinite: true
+      infinite: true
     }
   }, {
     breakpoint: 767,
