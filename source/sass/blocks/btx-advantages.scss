@@ -1,10 +1,14 @@
 .btx-advantages {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .btx-advantages__wrapper {
   margin: 0 auto;
-  max-width: $desktop-wrapper;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  max-width: 1166px;
+  // max-width: $desktop-wrapper;
 }
 
 .btx-advantages__list {
@@ -25,7 +29,7 @@
   display: inline-block;
   vertical-align: middle;
   padding-left: 86px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   max-width: 35%;
 }
 

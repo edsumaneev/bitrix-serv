@@ -3,12 +3,16 @@
   justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 200px;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  // max-width: 1175px;
   max-width: $desktop-wrapper;
 }
 
 .btx-cooperation__type {
-  padding: 50px 55px;
-  width: 38%;
+  padding: 50px 44px;
+  width: 40%;
 
   text-align: center;
 

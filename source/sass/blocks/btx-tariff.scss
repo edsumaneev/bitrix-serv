@@ -1,6 +1,10 @@
 .btx-tariff__wrapper {
   margin: 0 auto;
   margin-bottom: 200px;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  // max-width: 1175px;
   max-width: $desktop-wrapper;
 }
 
@@ -17,7 +21,7 @@
 
 .btx-tariff__table td,
 .btx-tariff__table th {
-  padding: 15px 5px;
+  padding: 16px 16px;
   // width: 30px;
   // height: 35px;
 

@@ -1,5 +1,5 @@
 .btx-links {
-  padding-top: 140px;
+  padding-top: 126px;
   padding-bottom: 50px;
 
   background-color: $bg-dark;
@@ -14,12 +14,18 @@
   flex-wrap: wrap;
   margin: 0 auto;
   // margin-bottom: 120px;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  // max-width: 1175px;
   max-width: $desktop-wrapper;
 }
 
 .btx-links__wrapper li {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  box-sizing: border-box;
+  // display: inline-block;
+  // vertical-align: middle;
   margin-bottom: 70px;
   width: 20%;
   opacity: 0.3;

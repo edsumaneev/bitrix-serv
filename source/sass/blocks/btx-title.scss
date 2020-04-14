@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0 auto;
   margin-bottom: 64px;
+
+  // max-width: 1175px;
+  padding-left: $offset;
+  padding-right: $offset;
   max-width: $desktop-wrapper;
 
   font-family: "Oswald", "Arial", sans-serif;

@@ -1,7 +1,7 @@
 // 'use strict';
-$('.btx-stuff__slider').slick({
-  prevArrow: $(".btx-stuff__prev"),
-  nextArrow: $(".btx-stuff__next"),
+$('.btx-staff__slider').slick({
+  prevArrow: $(".btx-staff__prev"),
+  nextArrow: $(".btx-staff__next"),
   infinite: true,
   speed: 350,
   // определяем скорость перелистывания

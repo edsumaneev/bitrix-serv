@@ -1,6 +1,14 @@
+.btx-about h2 {
+  margin-bottom: 58px;
+}
+
 .btx-about__wrapper {
   margin: 0 auto;
-  margin-bottom: 120px;
+  margin-bottom: 103px;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  // max-width: 1175px;
   max-width: $desktop-wrapper;
 }
 
