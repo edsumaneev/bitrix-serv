@@ -55,6 +55,22 @@
   }
 }
 
+.btx-staff__work {
+  position: relative;
+}
+
+.btx-staff__work::before {
+  position: absolute;
+  content: "";
+  width: 226px;
+  height: 0px;
+  bottom: -15px;
+  left: 20px;
+
+  opacity: 0.2;
+  border: 0.5px solid #FFFFFF;
+}
+
 .btx-staff__skill {
   margin-bottom: 45px;
 }
