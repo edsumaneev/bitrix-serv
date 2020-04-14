@@ -1,3 +1,37 @@
+@mixin container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-left: $offset;
+  padding-right: $offset;
+
+  width: 100%;
+  max-width: $desktop-wrapper;
+
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+
+    width: 100%;
+    max-width: $tablet-width-max;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: $mobile-offset;
+    padding-right: $mobile-offset;
+
+    width: $mobile-width;
+    max-width: $mobile-width-max;
+  }
+}
+
+@mixin unlist {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
 // @mixin container {
 //   box-sizing: border-box;
 //   margin: 0 auto;
@@ -19,10 +53,3 @@
 //     // padding-right: $desktop-offset;
 //   }
 // }
-
-@mixin unlist {
-  padding: 0;
-  margin: 0;
-
-  list-style: none;
-}

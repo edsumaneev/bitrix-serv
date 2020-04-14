@@ -170,3 +170,28 @@
   transform: rotate(360deg);
   background: url("../img/slider-arrow-hover.svg");
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-staff__prev {
+    right: 6.5%;
+  }
+
+  .btx-staff__next {
+    left: 6.5%;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .btx-staff__work::before {
+    width: 50%;
+    left: 115px;
+  }
+
+  .btx-staff__prev {
+    right: 8.5%;
+  }
+
+  .btx-staff__next {
+    left: 8.5%;
+  }
+}
