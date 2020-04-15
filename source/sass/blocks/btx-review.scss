@@ -97,3 +97,41 @@
 
   opacity: 0.3;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-review__wrapper--type1 {
+    display: block;
+    text-align: center;
+  }
+
+  .btx-review__video--type2 {
+    margin: 0 auto;
+  }
+
+  .btx-review__wrapper--type2 ul {
+    flex-direction: column;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+    width: $tablet-width-max;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .btx-review__wrapper--type2 span {
+    width: auto;
+  }
+
+  .btx-review__video p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50%;
+
+    font-size: 14px;
+    ;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}

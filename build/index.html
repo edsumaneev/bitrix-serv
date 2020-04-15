@@ -127,6 +127,10 @@
       <path d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z" stroke="#B70046" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M7 11H15" stroke="#B70046" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
+    <symbol id="toggle" viewBox="0 0 24 24">
+      <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path>
+      <path d="M0 0h24v24H0z" fill="none"></path>
+    </symbol>
   </svg>
 
   <header class="btx-header">
@@ -137,6 +141,13 @@
         </a>
       </div>
       <ul class="btx-header__nav">
+        <li class="btx-header__toggle">
+          <span>
+            <svg width="35" height="30">
+              <use xlink:href="#toggle"></use>
+            </svg>
+          </span>
+        </li>
         <li>
           <a href="#">Главная</a>
         </li>
@@ -769,7 +780,7 @@
     </section>
     <section class="btx-review">
       <h2 class="btx-title">Отзывы клиентов</h2>
-      <div class="btx-review__wrapper">
+      <div class="btx-review__wrapper btx-review__wrapper--type1">
         <div class="btx-review__video">
           <video width="574" height="328" controls="controls" poster="img/poster-video-d@1x.png">
             <!-- <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->

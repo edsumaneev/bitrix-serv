@@ -8,3 +8,15 @@
   background-position-y: -145%;
   background-position-x: 36%;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-body {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .btx-body {
+    padding-top: 35px;
+  }
+}

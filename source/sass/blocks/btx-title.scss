@@ -14,3 +14,19 @@
   font-size: 48px;
   line-height: 100%;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-title {
+    margin-bottom: 30px;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+    max-width: $tablet-width-max;
+
+    font-size: 36px;
+
+    text-align: center;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}
