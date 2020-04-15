@@ -87,4 +87,26 @@
   }
 }
 
+@media (max-width: $tablet-width-max) {
+  .btx-cooperation__wrapper {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 200px;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+    // max-width: 1175px;
+    max-width: 100%;
+  }
+
+  .btx-cooperation__type {
+    margin-bottom: 20px;
+    width: auto;
+
+    // text-align: center;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}
+
 // font-family: "Roboto", "Arial", sans-serif;

@@ -57,3 +57,37 @@
   font-size: 16px;
   line-height: 130%;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-about__wrapper {
+    margin-bottom: 80px;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+    // max-width: 1175px;
+    max-width: none;
+    width: auto;
+  }
+
+  .btx-about__wrapper ul {
+    display: block;
+    // margin: 0 auto;
+  }
+
+  .btx-about__wrapper li {
+    display: block;
+    margin: 0 auto;
+
+    width: auto;
+
+    text-align: center;
+  }
+
+  .btx-about__wrapper h3::after {
+    width: 50%;
+
+    left: 23%;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}

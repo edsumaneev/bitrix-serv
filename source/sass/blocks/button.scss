@@ -25,3 +25,15 @@
   background-color: $white;
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: $tablet-width-max) {
+  .button__btx-header {
+    padding: 18px 145px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .button__btx-header {
+    width: 100%;
+  }
+}

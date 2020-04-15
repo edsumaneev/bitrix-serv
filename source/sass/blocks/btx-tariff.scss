@@ -71,4 +71,17 @@
   background-color: #262626;
 }
 
-// font-family: "Roboto", "Arial", sans-serif;
+@media (max-width: $tablet-width-max) {
+  .btx-tariff__wrapper {
+    margin-bottom: 80px;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+
+    max-width: none;
+    width: auto;
+  }
+
+}
+
+// @media (max-width: $mobile-width-max) {}
