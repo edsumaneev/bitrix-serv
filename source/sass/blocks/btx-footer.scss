@@ -59,8 +59,22 @@
 }
 
 @media (max-width: $tablet-width-max) {
+  .btx-footer {
+    padding: 20px 0;
+  }
+
   .btx-footer__wrapper ul {
-    max-width: 100%;
+    justify-content: center;
+
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+    max-width: $tablet-width-max;
+
+    text-align: center;
+  }
+
+  .btx-footer__wrapper li {
+    margin: 0 5% 20px 5%;
   }
 }
 

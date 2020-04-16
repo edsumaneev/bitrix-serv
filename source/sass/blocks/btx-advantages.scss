@@ -69,3 +69,17 @@
 
   opacity: 0.5;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-advantages__list li {
+    // position: relative;
+    // display: inline-block;
+    // vertical-align: middle;
+    // padding-left: 86px;
+    // margin-bottom: 60px;
+    max-width: none;
+    width: auto;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}

@@ -99,6 +99,10 @@
 }
 
 @media (max-width: $tablet-width-max) {
+  .btx-review__wrapper {
+    margin-bottom: 60px;
+  }
+
   .btx-review__wrapper--type1 {
     display: block;
     text-align: center;
@@ -127,10 +131,13 @@
   .btx-review__video p {
     margin: 0 auto;
     margin-bottom: 20px;
-    width: 50%;
+    width: auto;
 
     font-size: 14px;
-    ;
+  }
+
+  .btx-review__video video {
+    width: 100%;
   }
 }
 

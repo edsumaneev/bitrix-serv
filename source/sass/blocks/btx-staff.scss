@@ -182,11 +182,22 @@
 }
 
 @media (max-width: $mobile-width-max) {
+  .btx-staff {
+    margin-bottom: 110px;
+  }
+
+  .btx-staff__prev,
+  .btx-staff__next {
+    bottom: -80px;
+    // width: 35px;
+    // height: 35px;
+  }
+
   .btx-staff__prev {
-    right: 8.5%;
+    right: 20%;
   }
 
   .btx-staff__next {
-    left: 8.5%;
+    left: 20%;
   }
 }

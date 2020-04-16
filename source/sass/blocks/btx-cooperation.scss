@@ -102,11 +102,19 @@
   .btx-cooperation__type {
     margin-bottom: 20px;
     width: auto;
-
-    // text-align: center;
   }
 }
 
-// @media (max-width: $mobile-width-max) {}
+@media (max-width: $mobile-width-max) {
+  .btx-cooperation__wrapper {
+    margin-bottom: 30px;
+  }
 
-// font-family: "Roboto", "Arial", sans-serif;
+  .btx-cooperation__type {
+    padding: 30px 25px;
+  }
+
+  .btx-cooperation__type a {
+    padding: 15px;
+  }
+}

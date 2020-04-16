@@ -36,3 +36,24 @@
 
   cursor: pointer;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-links {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .btx-links__wrapper {
+    padding-left: $tablet-offset;
+    padding-right: $tablet-offset;
+
+    max-width: $tablet-width-max;
+  }
+
+  .btx-links__wrapper li {
+    margin: 0 5% 30px 5%;
+    width: auto;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}

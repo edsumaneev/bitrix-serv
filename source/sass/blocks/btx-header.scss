@@ -47,6 +47,9 @@
 }
 
 .btx-header__contacts a {
+  display: inline-block;
+  vertical-align: middle;
+
   font-size: 0;
 
   cursor: pointer;
@@ -72,6 +75,7 @@
 
 .btx-header__contacts {
   min-width: 127px;
+  align-items: inherit;
 }
 
 .btx-header__git {
@@ -113,6 +117,11 @@
   padding-left: $offset;
   padding-right: $offset;
   max-width: $desktop-wrapper;
+}
+
+.btx-header__container {
+  padding: 0;
+  margin: 0;
 }
 
 .btx-header__title h1 {
@@ -283,20 +292,44 @@
     background-repeat: no-repeat;
   }
 
+  .btx-header__skills {
+    margin-bottom: 90px;
+  }
+
   .btx-header__skills ul {
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+  }
+
+  .btx-header__skills li {
+    padding-left: 0;
+    margin-bottom: 20px;
+    width: auto;
+
+    text-align: center;
+    border-left: none;
   }
 }
 
 @media (max-width: $mobile-width-max) {
-  .btx-header__title h1 {
-    margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 80%;
+  .btx-header__container {
+    width: 98%;
+  }
 
+  .btx-header__title {
+    margin-bottom: 30px;
+  }
+
+  .btx-header__title h1 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+    max-width: $mobile-width-max;
     text-align: center;
-    font-size: 42px;
+
+    overflow-x: auto;
+    text-align: center;
+    font-size: 36px;
   }
 
   .btx-header__phone,
@@ -308,6 +341,10 @@
   }
 
   .btx-header__top {
+    padding-left: $offset;
+    padding-right: $offset;
+    margin-bottom: 30px;
+
     width: 100%;
     max-width: $mobile-width-max;
   }
@@ -350,5 +387,13 @@
     justify-content: center;
 
     max-width: 100%;
+  }
+
+  .btx-header__features li {
+    margin-bottom: 30px;
+  }
+
+  .btx-header__skills {
+    margin-bottom: 30px;
   }
 }
