@@ -57,3 +57,11 @@
 
   cursor: pointer;
 }
+
+@media (max-width: $tablet-width-max) {
+  .btx-footer__wrapper ul {
+    max-width: 100%;
+  }
+}
+
+// @media (max-width: $mobile-width-max) {}
