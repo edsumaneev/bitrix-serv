@@ -84,4 +84,13 @@
 
 }
 
-// @media (max-width: $mobile-width-max) {}
+@media (max-width: $mobile-width-max) {
+  .btx-tariff h2 {
+    line-height: 130%;
+  }
+
+  .btx-tariff__table {
+    margin-bottom: 30px;
+    overflow-x: hidden;
+  }
+}

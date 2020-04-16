@@ -28,6 +28,25 @@ $('.btx-staff__slider').slick({
   }]
 });
 
+(function () {
+  var menuPop = document.querySelector(".btx-menu");
+  var btnToggle = document.querySelector(".btx-header__toggle");
+  var menuClose = document.querySelector(".btx-menu__close");
+
+  btnToggle.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    menuPop.classList.remove("visually-hidden");
+  });
+
+  if (menuClose) {
+    menuClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      menuPop.classList.add("visually-hidden");
+    });
+  };
+})();
+
+
 // $('.abonement__item').click(function () {
 //   var id = $(this).attr('data-tab'),
 //     content = $('.abonement__type[data-tab="' + id + '"]');
