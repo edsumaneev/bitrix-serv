@@ -1,0 +1,26 @@
+.team-body {
+  position: relative;
+
+  padding-bottom: 149px;
+
+  min-height: 100vh;
+}
+
+.team-footer {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: $tablet-width-max) {
+  .team-body {
+    padding-bottom: 202px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .team-body {
+    padding-bottom: 364px;
+  }
+}

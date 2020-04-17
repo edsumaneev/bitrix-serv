@@ -226,6 +226,10 @@
   display: none;
 }
 
+.btx-header__top--team {
+  padding-top: 70px;
+}
+
 @media (max-width: $tablet-width-max) {
   .btx-header__logo {
     display: none;
@@ -304,6 +308,10 @@
 
     text-align: center;
     border-left: none;
+  }
+
+  .btx-header__top--team {
+    padding-top: 50px;
   }
 }
 
@@ -394,5 +402,9 @@
   .btx-header__skills {
     display: none;
     // margin-bottom: 30px;
+  }
+
+  .btx-header__top--team {
+    padding-top: 35px;
   }
 }

@@ -1,0 +1,66 @@
+.team-page {
+  @include container();
+  padding-top: 10px;
+  max-width: 1235px;
+}
+
+.team-page h1 {
+  padding-left: $offset;
+  padding-right: $offset;
+}
+
+.team-page__listing {
+  display: none;
+}
+
+.team-page__listing.active {
+  display: flex;
+  flex-wrap: wrap;
+  // padding: 0;
+}
+
+.team-page__item {
+  margin: 0 25px 25px 0;
+  width: 23.4%;
+}
+
+.team-page__item--last {
+  margin-right: 0;
+}
+
+.team-page__tabs input {
+  display: none;
+}
+
+.team-page__tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.team-page__label {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+
+  text-align: center;
+
+  color: #f8f8f8;
+
+  opacity: 0.2;
+
+  cursor: pointer;
+}
+
+.team-page__label:hover {
+  opacity: 0.5;
+}
+
+.team-page__label.active {
+  opacity: 1;
+}

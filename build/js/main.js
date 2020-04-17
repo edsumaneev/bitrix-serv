@@ -28,6 +28,17 @@ $('.btx-staff__slider').slick({
   }]
 });
 
+$('.team-page__label').click(function () {
+  var id = $(this).attr('data-tab'),
+    content = $('.team-page__listing[data-tab="' + id + '"]');
+
+  $('.team-page__label.active').removeClass('active');
+  $(this).addClass('active');
+
+  $('.team-page__listing.active').removeClass('active');
+  content.addClass('active');
+});
+
 (function () {
   var menuPop = document.querySelector(".btx-menu");
   var btnToggle = document.querySelector(".btx-header__toggle");
