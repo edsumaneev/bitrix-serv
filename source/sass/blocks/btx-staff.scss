@@ -63,12 +63,12 @@
   position: absolute;
   content: "";
   width: 60%;
-  height: 0px;
+  height: 0;
   bottom: -15px;
   left: 20%;
 
   opacity: 0.2;
-  border: 0.5px solid #FFFFFF;
+  border: 0.5px solid $white;
 }
 
 .btx-staff__skill {

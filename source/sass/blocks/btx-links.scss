@@ -56,4 +56,10 @@
   }
 }
 
+@media (max-width: 560px) {
+  .btx-links {
+    display: none;
+  }
+}
+
 // @media (max-width: $mobile-width-max) {}

@@ -34,6 +34,10 @@
 
 @media (max-width: $mobile-width-max) {
   .button__btx-header {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+
     padding: 12px 15px;
     width: 290px;
   }

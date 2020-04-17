@@ -11,7 +11,7 @@
 .btx-tariff__table {
   width: 100%;
   border-collapse: collapse;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 .btx-tariff__table,
@@ -81,7 +81,6 @@
     max-width: none;
     width: auto;
   }
-
 }
 
 @media (max-width: $mobile-width-max) {

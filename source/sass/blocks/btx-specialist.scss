@@ -156,7 +156,9 @@
 // }
 
 @media (max-width: $mobile-width-max) {
-  //
+  .btx-specialist__column {
+    display: none;
+  }
 
   .btx-specialist,
   .btx-specialist__row--last {
