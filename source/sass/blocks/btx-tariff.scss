@@ -93,3 +93,9 @@
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 600px) {
+  .btx-tariff {
+    display: none;
+  }
+}
