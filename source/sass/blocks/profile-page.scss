@@ -2,38 +2,126 @@
   @include container();
 }
 
+.profile-page__footer {
+  position: relative;
+}
+
 .profile-page__card {
-  padding: 60px 90px 42px 60px;
+  padding: 30px 90px 42px 60px;
 
   background-color: rgba($color: $black, $alpha: 0.25);
 }
 
 .profile-page__col {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.profile-page__col ul {
-  @include unlist();
+.profile-page__col img {
+  margin-right: 30px;
 }
 
 .profile-page__col h1 {
+  padding: 0;
+  margin: 0 0 25px 0;
+
   font-size: 36px;
+}
+
+.profile-page__stat {
+  padding-top: 50px;
+  width: 30%;
+
+  text-align: center;
+}
+
+.profile-page__stat p {
+  padding: 0;
+  margin: 0;
+
+  opacity: 0.3;
+}
+
+.profile-page__stat span {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+
+
+  font-family: $roboto, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+
+  text-align: center;
+}
+
+.profile-page__stat span::after {
+  position: absolute;
+  content: "";
+  top: -60%;
+  left: 23%;
+
+  width: 70px;
+  height: 70px;
+
+  border: 1px solid $bg-red;
+  border-radius: 50%;
 }
 
 .profile-page__row {
   display: flex;
+  align-items: center;
 }
 
 .profile-page__row ul {
+  @include unlist();
   display: flex;
+  align-items: center;
+}
+
+.profile-page__row a {
+  color: $white;
+  text-decoration: none;
 }
 
 .profile-page__row--type1 {
   margin-bottom: 30px;
 }
 
+.profile-page__row.profile-page__row--type1 {
+  justify-content: space-between;
+}
+
 .profile-page__row--type2 {
   padding-top: 40px;
 
   border-top: 1px solid rgba($color: $white, $alpha: 0.1);
+}
+
+.profile-page__spec {
+  padding: 11px 30px 12px;
+
+  font-family: $roboto, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+
+  border: 1px solid $bg-red;
+  border-radius: 50px;
+}
+
+.profile-page__spec:hover {
+  color: $white;
+
+  background-color: $bg-red;
+}
+
+.profile-page__description {
+  @include container();
+  display: flex;
 }
