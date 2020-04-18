@@ -1,0 +1,39 @@
+.profile-page {
+  @include container();
+}
+
+.profile-page__card {
+  padding: 60px 90px 42px 60px;
+
+  background-color: rgba($color: $black, $alpha: 0.25);
+}
+
+.profile-page__col {
+  display: flex;
+}
+
+.profile-page__col ul {
+  @include unlist();
+}
+
+.profile-page__col h1 {
+  font-size: 36px;
+}
+
+.profile-page__row {
+  display: flex;
+}
+
+.profile-page__row ul {
+  display: flex;
+}
+
+.profile-page__row--type1 {
+  margin-bottom: 30px;
+}
+
+.profile-page__row--type2 {
+  padding-top: 40px;
+
+  border-top: 1px solid rgba($color: $white, $alpha: 0.1);
+}
