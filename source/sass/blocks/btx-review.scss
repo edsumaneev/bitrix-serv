@@ -43,7 +43,7 @@
 .btx-review__wrapper--type2 h4,
 .btx-review__wrapper--type2 p {
   padding: 0;
-  margin: 0;
+  margin: 0 18% 0 0;
 }
 
 .btx-review__wrapper--type2 span {
@@ -110,6 +110,11 @@
 
   .btx-review__video--type2 {
     margin: 0 auto;
+  }
+
+  .btx-review__wrapper--type2 h4,
+  .btx-review__wrapper--type2 p {
+    margin: 0;
   }
 
   .btx-review__wrapper--type2 ul {

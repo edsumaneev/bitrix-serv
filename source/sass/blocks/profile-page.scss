@@ -102,6 +102,22 @@
   border-top: 1px solid rgba($color: $white, $alpha: 0.1);
 }
 
+.profile-page__row--type2 p,
+.profile-page__row--type2 a {
+  padding: 0;
+  margin: 0;
+
+  font-family: $roboto, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+
+  letter-spacing: 0.005em;
+
+  color: #535353;
+}
+
 .profile-page__spec {
   padding: 11px 30px 12px;
 

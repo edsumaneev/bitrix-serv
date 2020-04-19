@@ -230,6 +230,11 @@
   padding-top: 70px;
 }
 
+.btx-header__top--profile {
+  padding-top: 70px;
+  margin-bottom: 40px;
+}
+
 @media (max-width: $tablet-width-max) {
   .btx-header__logo {
     display: none;
