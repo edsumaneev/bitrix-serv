@@ -28,6 +28,37 @@ $('.btx-staff__slider').slick({
   }]
 });
 
+$('.profile-page__slider').slick({
+  prevArrow: $(".profile-page__prev"),
+  nextArrow: $(".profile-page__next"),
+  dots: true, // показывать точки индикаторы
+  dotsClass: 'profile-page__dots', // название класса для точек
+  infinite: true,
+  speed: 350,
+  // определяем скорость перелистывания
+  slidesToShow: 4,
+  //количество слайдов для показа
+  slidesToScroll: 4,
+  //сколько слайдов за раз перелистнется
+  responsive: [{
+    breakpoint: 1204,
+    //сообщает, при какой ширине экрана нужно включать настройки
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      // centerMode: true
+      infinite: true
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      // centerMode: false
+    }
+  }]
+});
+
 $('.team-page__label').click(function () {
   var id = $(this).attr('data-tab'),
     content = $('.team-page__listing[data-tab="' + id + '"]');

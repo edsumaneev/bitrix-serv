@@ -2,12 +2,13 @@
   @include container();
 }
 
-.profile-page__footer {
+.btx-footer__profile-page {
   position: relative;
 }
 
 .profile-page__card {
   padding: 30px 90px 42px 60px;
+  margin-bottom: 62px;
 
   background-color: rgba($color: $black, $alpha: 0.25);
 }
@@ -138,6 +139,223 @@
 }
 
 .profile-page__description {
-  @include container();
+  // @include container();
   display: flex;
+}
+
+.profile-page__portfolio {
+  // @include container();
+  position: relative;
+}
+
+.profile-page__portfolio h3,
+.profile-page__column h4,
+.profile-page__column h3,
+.profile-page__column p {
+  padding: 0;
+  margin: 0;
+}
+
+.profile-page__portfolio h3,
+.profile-page__column h3 {
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  color: #535353;
+
+  span {
+    padding: 0;
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $bg-red;
+    opacity: 1;
+  }
+}
+
+.profile-page__portfolio h3 {
+  margin-bottom: 50px;
+}
+
+.profile-page__column--type1 p {
+  padding-bottom: 50px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+
+  color: #afafaf;
+
+  border-bottom: 1px solid rgba($color: $white, $alpha: 0.1);
+}
+
+.profile-page__column--type2 {
+  margin-left: 80px;
+  min-width: 35%;
+}
+
+.profile-page__column--type2 ul {
+  @include unlist();
+  padding-bottom: 50px;
+  margin-bottom: 109px;
+
+  border-bottom: 2px solid $bg-gray;
+}
+
+.profile-page__column--type2 li {
+  padding: 30px 35px 36px 33px;
+  margin-bottom: 25px;
+
+  background-color: $bg-gray;
+}
+
+.profile-page__column--type2 h4,
+.profile-page__column--type2 span {
+  padding-left: 65px;
+}
+
+.profile-page__column--type2 h4 {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.profile-page__column--type2 h4::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 46px;
+  height: 42px;
+
+  background: url("../img/profile-img-review@1x.png");
+}
+
+.profile-page__column--type2 span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 15px;
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: #c4c4c4;
+
+  opacity: 0.5;
+}
+
+.profile-page__column--type2 p {
+  padding-top: 14px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #afafaf;
+
+  border-top: 0.5px solid rgba($color: $white, $alpha: 0.1);
+}
+
+.profile-page__slider {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 102px;
+
+  // padding-left: $offset;
+  // padding-right: $offset;
+  width: 1220px;
+}
+
+.profile-page__item {
+  padding: 50px 0 0 0;
+  margin: 0;
+  max-width: 90%;
+
+  text-align: center;
+  background-color: $bg-gray;
+  border-radius: 3px;
+}
+
+.profile-page__item img {
+  margin: 0 auto;
+
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.35);
+}
+
+.profile-page__prev,
+.profile-page__next {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 43%;
+  width: 42px;
+  height: 42px;
+
+  font-size: 0;
+
+  outline: none;
+  border: hidden;
+  // border-radius: 50%;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.profile-page__prev {
+  right: 103%;
+
+  background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;
+}
+
+.profile-page__next {
+  left: 103%;
+
+  transform: rotate(180deg);
+  background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;
+}
+
+.profile-page__prev:hover {
+  transform: rotate(180deg);
+  background: url("../img/slider-arrow-1-hover.svg") 50% 50% no-repeat;
+}
+
+.profile-page__next:hover {
+  transform: rotate(0deg);
+  background: url("../img/slider-arrow-1-hover.svg") 50% 50% no-repeat;
+}
+
+.profile-page__dots {
+  text-align: center;
+  display: flex; // поставить кнопки в ряд
+  justify-content: center; // выровнять по центру
+  list-style: none; // убираем черные маркеры
+}
+
+.profile-page__dots button {
+  padding: 0;
+  margin: 35px 5px 0;
+  width: 8px;
+  height: 8px;
+
+  font-size: 0;
+
+  outline: none;
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba($color: $white, $alpha: 0.1);
+}
+
+.profile-page__dots li[class="slick-active"] button {
+  background: $bg-red;
 }
