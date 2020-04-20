@@ -54,6 +54,7 @@ $('.profile-page__slider').slick({
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1,
+      dots: false
       // centerMode: false
     }
   }]
