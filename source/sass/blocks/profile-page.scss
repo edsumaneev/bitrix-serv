@@ -51,11 +51,9 @@
   left: 23%;
   display: block;
   margin: auto;
-  // margin-bottom: 50px;
 
   width: 70px;
   height: 70px;
-
 
   font-family: $roboto, "Arial", sans-serif;
   font-style: normal;
@@ -64,12 +62,6 @@
   line-height: 290%;
 
   text-align: center;
-}
-
-.profile-page__stat span {
-
-
-
 
   border: 1px solid $bg-red;
   border-radius: 50%;
@@ -433,19 +425,16 @@
   }
 
   .profile-page__stat span {
+    left: 25%;
+
+    width: 55px;
+    height: 55px;
+
     font-size: 20px;
   }
 
   .profile-page__stat {
     width: 25%;
-  }
-
-  .profile-page__stat span {
-    // top: -60%;
-    left: 25%;
-
-    width: 55px;
-    height: 55px;
   }
 
   .profile-page__stat p {
