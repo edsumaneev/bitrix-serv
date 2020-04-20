@@ -146,6 +146,8 @@
 .profile-page__portfolio {
   // @include container();
   position: relative;
+
+  // overflow-x: hidden;
 }
 
 .profile-page__portfolio h3,
@@ -200,6 +202,8 @@
 }
 
 .profile-page__column--type2 {
+  position: relative;
+
   margin-left: 80px;
   min-width: 35%;
 }
@@ -267,6 +271,23 @@
   border-top: 0.5px solid rgba($color: $white, $alpha: 0.1);
 }
 
+.profile-page__button {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 63px;
+  height: 63px;
+
+  font-size: 0;
+
+  outline: none;
+  border: none;
+  background: url("../img/arrow-down.png") 50% 50% no-repeat;
+  background-color: $bg-page;
+
+  cursor: pointer;
+}
+
 .profile-page__slider {
   display: block;
   margin: 0 auto;
@@ -274,7 +295,7 @@
 
   // padding-left: $offset;
   // padding-right: $offset;
-  width: 1220px;
+  // width: 1220px;
 }
 
 .profile-page__item {
@@ -312,13 +333,13 @@
 }
 
 .profile-page__prev {
-  right: 103%;
+  left: -50px;
 
   background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;
 }
 
 .profile-page__next {
-  left: 103%;
+  right: -30px;
 
   transform: rotate(180deg);
   background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;

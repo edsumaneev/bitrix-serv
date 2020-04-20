@@ -41,7 +41,7 @@ $('.profile-page__slider').slick({
   slidesToScroll: 4,
   //сколько слайдов за раз перелистнется
   responsive: [{
-    breakpoint: 1204,
+    breakpoint: 1330,
     //сообщает, при какой ширине экрана нужно включать настройки
     settings: {
       slidesToShow: 3,
