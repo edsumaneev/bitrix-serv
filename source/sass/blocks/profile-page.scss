@@ -119,6 +119,50 @@
   color: #535353;
 }
 
+.profile-page__row--type2 li {
+  position: relative;
+
+  padding-left: 22px;
+  margin-right: 64px;
+}
+
+.profile-page__location::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 2px;
+  width: 13px;
+  height: 15px;
+
+  background: url("../img/icon-pinmap.svg") no-repeat;
+}
+
+.profile-page__mail::before {
+  position: absolute;
+  content: "";
+  left: -5px;
+  top: 5px;
+  width: 20px;
+  height: 15px;
+
+  background: url("../img/icon-pinmail.svg") no-repeat;
+}
+
+.profile-page__mail:hover {
+  color: $bg-red;
+}
+
+.profile-page__since::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 2px;
+  width: 13px;
+  height: 15px;
+
+  background: url("../img/icon-pinwatch.svg") no-repeat;
+}
+
 .profile-page__spec {
   padding: 11px 30px 12px;
 
