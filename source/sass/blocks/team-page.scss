@@ -16,15 +16,16 @@
 .team-page__listing.active {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: space-between;
   margin-bottom: 115px;
 }
 
 .team-page__item {
-  margin: 0 25px 25px 0;
+  margin: 0 2.1% 25px 0;
   width: 23.4%;
 }
 
-.team-page__item--last {
+.team-page__item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -39,7 +40,7 @@
   padding-left: $offset;
   padding-right: $offset;
   margin-bottom: 50px;
-  width: 100%;
+  // width: 100%;
 
   border-bottom: 1px solid $bg-gray;
 }
@@ -76,4 +77,55 @@
 
 .team-page__map {
   margin-bottom: 160px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .team-page__item {
+    margin: 0 2% 25px 0;
+    width: 32%;
+  }
+
+  .team-page__item:nth-child(4n) {
+    margin-right: 1%;
+  }
+
+  .team-page__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .team-page__map {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .team-page {
+    max-width: none;
+    width: auto;
+  }
+
+  .team-page__tabs {
+    margin-bottom: 30px;
+  }
+
+  .team-page__label {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    min-width: 35%;
+  }
+
+  .team-page__item {
+    margin: 0 0 15px 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  .team-page__item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .team-page__map {
+    margin-bottom: 40px;
+  }
 }
