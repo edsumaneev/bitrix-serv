@@ -462,6 +462,22 @@
     width: 100%;
   }
 
+  .profile-page__stat {
+    width: 30%;
+  }
+
+  .profile-page__col {
+    flex-direction: column;
+  }
+
+  .profile-page__stat span {
+    left: 20%;
+  }
+
+  .profile-page__col img {
+    margin-right: 0;
+  }
+
   .profile-page__row--type1 {
     flex-direction: column;
   }
@@ -475,14 +491,25 @@
     max-width: none;
   }
 
-  .profile-page__location,
-  .profile-page__since,
-  .profile-page__col img {
+  .profile-page__row--type2 {
+    padding-top: 20px;
+  }
+
+  .profile-page__row--type2 ul {
+    justify-content: center;
+  }
+
+  .profile-page__row--type2 li {
+    margin-right: 0;
+  }
+
+  .profile-page__row--type2 li:not(:nth-child(3)) {
     display: none;
   }
 
   .profile-page__col ul {
     justify-content: space-between;
+    align-items: baseline;
   }
 
   .profile-page__description {
