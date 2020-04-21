@@ -60,6 +60,39 @@ $('.profile-page__slider').slick({
   }]
 });
 
+$('.profile-page__vert-slider').slick({
+  prevArrow: false,
+  // $(".profile-page__button-prev"),
+  nextArrow: $(".profile-page__button"),
+  dots: false, // показывать точки индикаторы
+  infinite: true,
+  vertical: true,
+  speed: 350,
+  // определяем скорость перелистывания
+  slidesToShow: 3,
+  //количество слайдов для показа
+  slidesToScroll: 2,
+  //сколько слайдов за раз перелистнется
+  responsive: [{
+    breakpoint: 1330,
+    //сообщает, при какой ширине экрана нужно включать настройки
+    settings: {
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      // centerMode: true
+      infinite: true
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false
+      // centerMode: false
+    }
+  }]
+});
+
 $('.team-page__label').click(function () {
   var id = $(this).attr('data-tab'),
     content = $('.team-page__listing[data-tab="' + id + '"]');

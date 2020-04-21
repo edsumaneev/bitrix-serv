@@ -241,18 +241,18 @@
   position: relative;
 
   margin-left: 80px;
-  min-width: 35%;
+  max-width: 35%;
 }
 
-.profile-page__column--type2 ul {
-  @include unlist();
-  padding-bottom: 50px;
+.profile-page__vert-slider {
+  // @include unlist();
+  padding-bottom: 20px;
   margin-bottom: 109px;
 
   border-bottom: 2px solid $bg-gray;
 }
 
-.profile-page__column--type2 li {
+.profile-page__vert-slide {
   padding: 30px 35px 36px 33px;
   margin-bottom: 25px;
 
@@ -297,6 +297,7 @@
 
 .profile-page__column--type2 p {
   padding-top: 14px;
+  padding-right: 45px;
 
   font-weight: normal;
   font-size: 14px;
@@ -310,7 +311,7 @@
 .profile-page__button {
   position: absolute;
   bottom: 80px;
-  left: 50%;
+  left: 45%;
   width: 63px;
   height: 63px;
 
@@ -413,7 +414,6 @@
   background: $bg-red;
 }
 
-
 @media (max-width: $tablet-width-max) {
   .profile-page__card {
     padding: 30px 30px 42px 30px;
@@ -472,6 +472,7 @@
 
   .profile-page__column--type2 {
     margin-left: 0;
+    max-width: none;
   }
 
   .profile-page__location,
@@ -488,7 +489,7 @@
     flex-direction: column;
   }
 
-  .profile-page__column--type2 ul {
+  .profile-page__vert-slider {
     padding: 0;
     margin-bottom: 35px;
   }
