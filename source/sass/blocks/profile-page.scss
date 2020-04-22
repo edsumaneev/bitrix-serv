@@ -48,9 +48,10 @@
 .profile-page__stat span {
   position: absolute;
   top: 0;
-  left: 23%;
-  display: block;
+  left: 0;
+  right: 0;
   margin: auto;
+  display: block;
 
   width: 70px;
   height: 70px;
@@ -451,8 +452,6 @@
   }
 
   .profile-page__stat span {
-    left: 25%;
-
     width: 55px;
     height: 55px;
 
@@ -504,10 +503,6 @@
 
   .profile-page__col {
     flex-direction: column;
-  }
-
-  .profile-page__stat span {
-    left: 10%;
   }
 
   .profile-page__stat p {
