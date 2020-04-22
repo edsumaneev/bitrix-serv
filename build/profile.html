@@ -34,7 +34,7 @@
         12.9999H11C10.6464 12.9999 10.3072 12.8594 10.0572 12.6094C9.80714 12.3593 9.66667 12.0202 9.66667
         11.6666V9.66659C9.66667 9.31296 9.80714 8.97383 10.0572 8.72378C10.3072 8.47373 10.6464 8.33325 11
         8.33325H13V11.6666ZM1 11.6666C1 12.0202 1.14048 12.3593 1.39052 12.6094C1.64057 12.8594 1.97971 12.9999 2.33333
-        12.9999H3C3.35362 12.9999 3.69276 12.8594 3.94281 12.6094C4.19286 12.3593 4.33333 12.0202 4.33333
+        12.9999h2C3.35362 12.9999 3.69276 12.8594 3.94281 12.6094C4.19286 12.3593 4.33333 12.0202 4.33333
         11.6666V9.66659C4.33333 9.31296 4.19286 8.97383 3.94281 8.72378C3.69276 8.47373 3.35362 8.33325 3
         8.33325H1V11.6666Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     </symbol>
@@ -48,7 +48,7 @@
       <path d="M22.9569 19.533C22.1609 19.533 21.3795 19.4085 20.6389 19.1638C20.276 19.04 19.8299 19.1536 19.6084 19.381L18.1467 20.4845C16.4516 19.5796 15.4074 18.5357 14.5148 16.8533L15.5858 15.4296C15.8641 15.1518 15.9639 14.7459 15.8443 14.365C15.5985 13.6205 15.4736 12.8394 15.4736 12.0432C15.4737 11.468 15.0057 11 14.4305 11H12.0431C11.468 11 11 11.468 11 12.0431C11 18.6362 16.3638 24 22.9569 24C23.532 24 24 23.532 24 22.9568V20.5761C24 20.001 23.532 19.533 22.9569 19.533Z" fill="white"></path>
     </symbol>
     <symbol id="toggle" viewBox="0 0 24 24">
-      <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path>
+      <path d="M3 13h2v-2h2v2zm0 4h2v-2h2v2zm0-8h2V7h2v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path>
       <path d="M0 0h24v24H0z" fill="none"></path>
     </symbol>
   </svg>
@@ -123,7 +123,7 @@
       <div class="profile-page__card">
         <div class="profile-page__row profile-page__row--type1">
           <div class="profile-page__col">
-            <img src="img/profile-img-main@1x.png" alt="portrait" width="119" height="119">
+            <img src="img/profile-img-main@1x.png" alt="Валентин Крузенштернос" width="119" height="119">
             <div class="profile-page__block">
               <h1 class="btx-title">Валентин Крузенштернос</h1>
               <a class="profile-page__spec" href="#">Веб-разработка</a>
@@ -163,7 +163,7 @@
     </section>
     <section class="profile-page__description">
       <div class="profile-page__column profile-page__column--type1">
-        <h3>информация об исполнителе</h3>
+        <h2>информация об исполнителе</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Morbi leo urna molestie at elementum eu facilisis. Lacinia at quis risus sed vulputate odio.
           Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Amet venenatis urna cursus eget nunc
@@ -176,54 +176,68 @@
         </p>
       </div>
       <div class="profile-page__column profile-page__column--type2">
-        <h3>Отзывы клиентов <span>35</span></h3>
+        <h2>Отзывы клиентов <span>35</span></h2>
         <div class="profile-page__vert-slider">
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
           <div class="profile-page__vert-slide">
-            <h4>Максим Котюк</h4>
+            <h3>Максим Котюк</h3>
             <span>Группа компаний “ПИК”</span>
-            <p>Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
+            <p>
+              <img src="img/profile-img-review@1x.png" alt="Максим Котюк" width="46" height="42">
+              Врач андролог, стаж 18 лет. Все отзывы о враче. Запись онлайн или по телефону. Выезжает на дом.
               Специализируется в области лечения болезней предстательной железы.
             </p>
           </div>
@@ -232,7 +246,7 @@
       </div>
     </section>
     <section class="profile-page__portfolio">
-      <h3>Работы в портфолио <span>25</span></h3>
+      <h2>Работы в портфолио <span>25</span></h2>
       <div class="profile-page__slider">
         <div class="profile-page__item">
           <img src="img/profile-img-slide-1@1x.png" alt="programmer" width="206" height="232">
@@ -304,19 +318,19 @@
     <div class="btx-footer__wrapper">
       <ul>
         <li>
-          <h3>Телефон:</h3>
+          <h2>Телефон:</h2>
           <a href="tel:+79651500303">+&nbsp;7&nbsp;965&nbsp;150&nbsp;03&nbsp;03</a>
         </li>
         <li>
-          <h3>почта:</h3>
+          <h2>почта:</h2>
           <a href="mailto:office@crazy.studio">office@crazy.studio</a>
         </li>
         <li>
-          <h3>Сайт:</h3>
+          <h2>Сайт:</h2>
           <a href="crazy.studio">crazy.studio</a>
         </li>
         <li>
-          <h3>Адрес</h3>
+          <h2>Адрес</h2>
           <p>office@crazy.studio</p>
         </li>
       </ul>

@@ -158,13 +158,16 @@
 }
 
 .profile-page__spec {
+  display: block;
   padding: 11px 30px 12px;
+  max-width: 161px;
 
   font-family: $roboto, "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 130%;
+  text-align: center;
 
   border: 1px solid $bg-red;
   border-radius: 50px;
@@ -178,7 +181,13 @@
 
 .profile-page__description {
   display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 }
+
+// .profile-page__column--type1 {
+//   flex-basis: 57%;
+// }
 
 .profile-page__portfolio {
   position: relative;
@@ -186,16 +195,16 @@
   margin: 0 auto;
 }
 
-.profile-page__portfolio h3,
-.profile-page__column h4,
+.profile-page__portfolio h2,
 .profile-page__column h3,
+.profile-page__column h2,
 .profile-page__column p {
   padding: 0;
   margin: 0;
 }
 
-.profile-page__portfolio h3,
-.profile-page__column h3 {
+.profile-page__portfolio h2,
+.profile-page__column h2 {
   margin-bottom: 30px;
 
   font-weight: bold;
@@ -221,7 +230,7 @@
   }
 }
 
-.profile-page__portfolio h3 {
+.profile-page__portfolio h2 {
   margin-bottom: 50px;
 }
 
@@ -241,13 +250,14 @@
   position: relative;
 
   margin-left: 80px;
+  margin-bottom: 109px;
   max-width: 35%;
 }
 
 .profile-page__vert-slider {
   // @include unlist();
   padding-bottom: 20px;
-  margin-bottom: 109px;
+  // margin-bottom: 109px;
 
   border-bottom: 2px solid $bg-gray;
 }
@@ -259,28 +269,37 @@
   background-color: $bg-gray;
 }
 
-.profile-page__column--type2 h4,
+.profile-page__vert-slide p {
+  position: relative;
+}
+
+.profile-page__vert-slide img {
+  position: absolute;
+  top: -55px;
+}
+
+.profile-page__column--type2 h3,
 .profile-page__column--type2 span {
   padding-left: 65px;
 }
 
-.profile-page__column--type2 h4 {
-  position: relative;
+.profile-page__column--type2 h3 {
+  // position: relative;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
 }
 
-.profile-page__column--type2 h4::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  width: 46px;
-  height: 42px;
+// .profile-page__column--type2 h3::before {
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   width: 46px;
+//   height: 42px;
 
-  background: url("../img/profile-img-review@1x.png");
-}
+//   background: url("../img/profile-img-review@1x.png");
+// }
 
 .profile-page__column--type2 span {
   display: inline-block;
@@ -299,8 +318,8 @@
   padding-top: 14px;
   padding-right: 45px;
 
-  font-weight: normal;
-  font-size: 14px;
+  // font-weight: normal;
+  // font-size: 14px;
   line-height: 150%;
 
   color: #afafaf;
@@ -310,8 +329,11 @@
 
 .profile-page__button {
   position: absolute;
-  bottom: 80px;
-  left: 45%;
+  bottom: -30px;
+  // left: 45%;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 63px;
   height: 63px;
 
@@ -420,6 +442,10 @@
     margin-bottom: 62px;
   }
 
+  .profile-page__spec {
+    max-width: 100%;
+  }
+
   .profile-page__col ul {
     justify-content: flex-end;
   }
@@ -438,7 +464,7 @@
   }
 
   .profile-page__stat p {
-    padding: 20 0 0 0;
+    padding: 20px 0 0 0;
   }
 
   .profile-page__row--type2 ul {
@@ -462,8 +488,18 @@
     width: 100%;
   }
 
+  .profile-page__card {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
   .profile-page__stat {
     width: 30%;
+  }
+
+  .profile-page__portfolio h2 {
+    margin-bottom: 30px;
+    text-align: center;
   }
 
   .profile-page__col {
@@ -471,7 +507,11 @@
   }
 
   .profile-page__stat span {
-    left: 20%;
+    left: 10%;
+  }
+
+  .profile-page__stat p {
+    font-size: 12px;
   }
 
   .profile-page__col img {
@@ -486,8 +526,21 @@
     margin-bottom: 35px;
   }
 
+  .profile-page__column--type1 h2,
+  .profile-page__column--type2 h2 {
+    text-align: center;
+  }
+
+  .profile-page__column--type1 p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
   .profile-page__column--type2 {
     margin-left: 0;
+    margin-bottom: 35px;
     max-width: none;
   }
 
@@ -518,12 +571,10 @@
 
   .profile-page__vert-slider {
     padding: 0;
-    margin-bottom: 35px;
   }
 
   .profile-page__button {
-    bottom: 29px;
-    left: 45%;
+    bottom: -5px;
     width: 40px;
     height: 15px;
   }
