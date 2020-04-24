@@ -182,13 +182,7 @@
 
 .profile-page__description {
   display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
 }
-
-// .profile-page__column--type1 {
-//   flex-basis: 57%;
-// }
 
 .profile-page__portfolio {
   position: relative;
@@ -256,9 +250,7 @@
 }
 
 .profile-page__vert-slider {
-  // @include unlist();
   padding-bottom: 20px;
-  // margin-bottom: 109px;
 
   border-bottom: 2px solid $bg-gray;
 }
@@ -285,22 +277,10 @@
 }
 
 .profile-page__column--type2 h3 {
-  // position: relative;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
 }
-
-// .profile-page__column--type2 h3::before {
-//   position: absolute;
-//   content: "";
-//   left: 0;
-//   width: 46px;
-//   height: 42px;
-
-//   background: url("../img/profile-img-review@1x.png");
-// }
 
 .profile-page__column--type2 span {
   display: inline-block;

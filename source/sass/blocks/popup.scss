@@ -1,0 +1,86 @@
+.popup {
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  padding: 10px;
+
+  transform: translate(-50%, -50%);
+
+  background-color: rgba($color: $bg-dark, $alpha: 0.8);
+}
+
+.popup h2 {
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-size: 30px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+
+  background: url("../img/icon-close.svg") 50% 50% no-repeat;
+  background-size: 100%;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: rotate(45deg);
+  }
+}
+
+.popup__field,
+.popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__textarea,
+.popup__select,
+.popup__input {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 0 0 10px;
+  margin-bottom: 20px;
+  color: $bg-dark;
+  font-size: 18px;
+  background-color: $light-gray;
+  border: 0;
+  outline: 0;
+  min-height: 45px;
+  min-width: 350px;
+}
+
+// .popup__select {
+
+// }
+
+.popup__label {
+  margin-bottom: 5px;
+
+  font-family: $roboto, "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+
+  // letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
