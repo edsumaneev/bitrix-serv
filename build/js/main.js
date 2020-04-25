@@ -152,9 +152,11 @@ $('.team-page__label').click(function () {
 
     var phoneForm = document.querySelector(".popup__input--phone");
 
-    phoneForm.addEventListener("input", template, false);
-    phoneForm.addEventListener("focus", template, false);
-    phoneForm.addEventListener("blur", template, false);
+    if (phoneForm) {
+      phoneForm.addEventListener("input", template, false);
+      phoneForm.addEventListener("focus", template, false);
+      phoneForm.addEventListener("blur", template, false);
+    }
   });
 })();
 
@@ -201,6 +203,7 @@ $('.team-page__label').click(function () {
     }
   });
 
-  btnHeader.addEventListener("click", openModal, false);
-
+  if (modalForm) {
+    btnHeader.addEventListener("click", openModal, false);
+  }
 })();

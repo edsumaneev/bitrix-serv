@@ -120,8 +120,15 @@
   border-radius: 50px;
 }
 
-.btx-staff__item a:hover {
-  background-color: $bg-red;
+.btx-staff__item:hover {
+  background: linear-gradient(149.12deg, $bg-gray -10.83%, #880034 110.68%);
+
+  cursor: pointer;
+}
+
+.btx-staff__item:hover a {
+  border-color: rgba($color: $white, $alpha: 0.2);
+  background-color: transparent;
 }
 
 .btx-staff__item a:active {

@@ -74,12 +74,12 @@
 }
 
 .btx-cooperation__type:hover {
-  background-color: $bg-red;
+  background: linear-gradient(149.12deg, $bg-gray -10.83%, #880034 110.68%);
 
   cursor: pointer;
 
   a {
-    border-color: $white;
+    border-color: rgba($color: $white, $alpha: 0.2);
   }
 
   p {

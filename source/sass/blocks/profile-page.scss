@@ -262,6 +262,12 @@
   background-color: $bg-gray;
 }
 
+.profile-page__vert-slide:hover {
+  background: linear-gradient(149.12deg, $bg-gray -10.83%, #880034 110.68%);
+
+  cursor: pointer;
+}
+
 .profile-page__vert-slide p {
   position: relative;
 }
@@ -299,8 +305,6 @@
   padding-top: 14px;
   padding-right: 45px;
 
-  // font-weight: normal;
-  // font-size: 14px;
   line-height: 150%;
 
   color: #afafaf;
@@ -311,7 +315,6 @@
 .profile-page__button {
   position: absolute;
   bottom: -30px;
-  // left: 45%;
   left: 0;
   right: 0;
   margin: auto;
@@ -342,6 +345,12 @@
   text-align: center;
   background-color: $bg-gray;
   border-radius: 3px;
+}
+
+.profile-page__item:hover {
+  background: linear-gradient(149.12deg, $bg-gray -10.83%, #880034 110.68%);
+
+  cursor: pointer;
 }
 
 .profile-page__item img {

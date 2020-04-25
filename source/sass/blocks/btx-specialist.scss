@@ -33,7 +33,8 @@
 }
 
 .btx-specialist__row li:hover {
-  background-color: $bg-red;
+  // background-color: $bg-red;
+  background: linear-gradient(149.12deg, $bg-gray -10.83%, #880034 110.68%);
 }
 
 .btx-specialist__row li:not(:last-child) {
