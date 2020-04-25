@@ -1016,35 +1016,28 @@
   <div class="modal-overlay visually-hidden"></div>
   <div class="popup visually-hidden">
     <div class="popup__close"></div>
-    <h2 class="btx-title">Оценить</h2>
+    <h2 class="btx-title">Оставить заявку</h2>
     <form class="popup__form" action="#" method="post" name="popup-form">
       <fieldset class="popup__field">
-        <legend>Ваши данные</legend>
-        <label class="popup__label" for="surname">Фамилия:</label>
-        <input class="popup__input" type="text" name="surname" placeholder="Укажите фамилию *" id="surname" required>
-        <label class="popup__label" for="name">Имя:</label>
-        <input class="popup__input" type="text" name="name" placeholder="Введите ваше имя *" id="name" required>
-        <label class="popup__label" for="patronymic">Отчество:</label>
-        <input class="popup__input" type="text" name="patronymic" placeholder="Отчество (не обязательно)"
-          id="patronymic">
-        <label class="popup__label" for="email">Ваш email:</label>
+        <label class="popup__label" for="surname">ФИО:</label>
+        <input class="popup__input" type="text" name="surname" placeholder="ФИО" id="surname" required>
+        <label class="popup__label" for="email">Почта:</label>
         <input class="popup__input" type="email" name="email" placeholder="Ваш email" id="email">
-        <label class="popup__label" for="phone">Ваш телефон:</label>
+        <label class="popup__label" for="phone">Телефон</label>
         <input class="popup__input popup__input--phone" type="tel" name="phone" placeholder="Ваш телефон" id="phone">
-        <label class="popup__label" for="site">Ссылка на сайт:</label>
+        <label class="popup__label" for="site">Ссылка на сайт</label>
         <input class="popup__input" type="url" name="site" placeholder="Ссылка на сайт" id="site">
-        <label class="popup__label" for="license">Тип лицензии</label>
+        <label class="popup__label" for="license">Лицензия 1C Битрикс</label>
         <select class="popup__select" id="license" name="license">
-          <option value="1" selected>1 тип</option>
-          <option value="2">2 тип</option>
-          <option value="3">3 тип</option>
-          <option value="4">4 тип</option>
+          <option value="1" selected>Редакция «Старт»</option>
+          <option value="2">Редакция «Стандарт»</option>
+          <option value="3">Редакция «Малый бизнес»</option>
+          <option value="4">Редакция «Бизнес»</option>
         </select>
       </fieldset>
 
       <fieldset class="popup__field">
-        <legend>Оценить</legend>
-        <label class="popup__label" for="problem">Необходима помощь в:</label>
+        <label class="popup__label" for="problem">Что требуется сделать?</label>
         <select class="popup__select" id="problem" name="problem">
           <option value="1" selected>Разработка новых модулей</option>
           <option value="2">Исправление ошибок в коде</option>
@@ -1064,10 +1057,11 @@
           <option value="16">Исправление ошибок в коде</option>
           <option value="17">Смена доменного имени</option>
           <option value="18">Интеграция с Авито</option>
-          <legend class="popup__label" for="textarea">Подробное описание</legend>
-          <textarea class="popup__textarea" name="textarea" rows="4" id="textarea"></textarea>
+        </select>
+        <label class="popup__label" for="textarea">Опишите вашу задачу</label>
+        <textarea class="popup__textarea" name="textarea" rows="1" id="textarea"></textarea>
       </fieldset>
-      <button type="submit">Отправить</button>
+      <button class="button" type="submit">Отправить</button>
       <button type="reset">Очистить поля</button>
     </form>
   </div>
