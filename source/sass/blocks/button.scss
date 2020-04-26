@@ -26,6 +26,19 @@
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
 
+.button__popup {
+  padding: 15px 0;
+  margin-right: 30px;
+  width: 35%;
+
+  font-size: 12px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 5px;
+}
+
 @media (max-width: $tablet-width-max) {
   .button__btx-header {
     padding: 18px 145px;
