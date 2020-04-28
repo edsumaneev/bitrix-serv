@@ -26,6 +26,7 @@
   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
 
+.button__profile-modal,
 .button__popup {
   padding: 15px 0;
   margin-right: 30px;
@@ -38,6 +39,38 @@
 
   border-radius: 5px;
 }
+
+.button__profile-modal {
+  padding: 15px 0;
+  margin-right: 15px;
+
+  width: 30%;
+}
+
+.button__profile-modal:hover {
+  color: $bg-red;
+
+  background-color: $white;
+}
+
+.button__profile-modal--close {
+  width: 25%;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.22);
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.button__profile-modal--close:hover {
+  background-color: $bg-dark;
+}
+
+.button__profile-modal:active,
+.button__btx-header:active,
+.button__profile-modal--close:active {
+  opacity: 0.3;
+}
+
 
 @media (max-width: $tablet-width-max) {
   .button__btx-header {

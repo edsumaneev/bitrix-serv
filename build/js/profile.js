@@ -1,16 +1,55 @@
 // 'use strict';
-$('.profile-page__vert-slider').click(function () {
-  var id = $(this).attr('data-tab'),
-    content = $('.abonement__type[data-tab="' + id + '"]');
+$('.profile-page__vert-slide').click(function () {
 
-  $('.abonement__item.active').removeClass('active');
-  $(this).addClass('active');
+  $('.profile-modal').removeClass('visually-hidden');
 
-  $('.abonement__type.active').removeClass('active');
-  content.addClass('active');
+  $('.modal-overlay').removeClass('visually-hidden');
+
+  $('.btx-body').addClass('btx-body__scroll');
 });
 
 (function () {
-  // var sliderItem = document.querySelectorAll(".profile-page__vert-slider");
+  var profileForm = document.querySelector(".profile-modal");
+  var profileClose = document.querySelector(".profile-modal__close");
+  var scrollRmv = document.querySelector(".btx-body");
+  var modalOverlay = document.querySelector(".modal-overlay");
+  var btnClose = document.querySelector(".button__profile-modal--close");
 
+  if (profileClose) {
+    profileClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      profileForm.classList.add("visually-hidden");
+      scrollRmv.classList.remove("btx-body__scroll");
+      modalOverlay.classList.add("visually-hidden");
+    })
+  }
+
+  if (modalOverlay) {
+    modalOverlay.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      profileForm.classList.add("visually-hidden");
+      scrollRmv.classList.remove("btx-body__scroll");
+      modalOverlay.classList.add("visually-hidden");
+    })
+  }
+
+  if (btnClose) {
+    btnClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      profileForm.classList.add("visually-hidden");
+      scrollRmv.classList.remove("btx-body__scroll");
+      modalOverlay.classList.add("visually-hidden");
+    })
+  }
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (profileForm) {
+        profileForm.classList.add("visually-hidden");
+        scrollRmv.classList.remove("btx-body__scroll");
+        modalOverlay.classList.add("visually-hidden");
+      }
+    }
+  })
 })();
