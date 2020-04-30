@@ -1,0 +1,26 @@
+.track__track01,
+.track__track02,
+.track__track03,
+.track__track04 {
+  width: 100%;
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.track__track01 {
+  background-image: url("../img/track01-img-bg@1x.png");
+}
+
+.track__track02 {
+  background-image: url("../img/track02-img-bg@1x.png");
+}
+
+.track__track03 {
+  background-image: url("../img/track03-img-bg@1x.png");
+}
+
+.track__track04 {
+  background-image: url("../img/track04-img-bg@1x.png");
+}
