@@ -212,6 +212,11 @@
     width: calc(100% - 30px);
   }
 
+  .popup__select--license,
+  .popup__label--license {
+    display: none;
+  }
+
   .popup__top {
     padding: 30px 0 30px 0;
     text-align: center;
@@ -231,26 +236,30 @@
   }
 
   .popup__row--type1 {
+    align-items: baseline;
     padding: 0;
+    margin-left: 15px;
   }
 
   .popup__row--type2 {
     padding: 20px 30px;
-    margin-top: 20px;
 
     text-align: center;
   }
 
   .popup__textarea {
-    width: 90%;
+    width: 95%;
   }
 
   .popup__bottom {
     flex-direction: column;
   }
 
-  .button__popup {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .popup__textarea,
+  .popup__select,
+  .popup__input {
+    margin-bottom: 15px;
+
+    text-align: left;
   }
 }
