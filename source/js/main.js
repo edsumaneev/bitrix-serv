@@ -163,6 +163,7 @@ $('.team-page__label').click(function () {
 (function () {
   var modalForm = document.querySelector(".popup");
   var btnHeader = document.querySelector(".button__btx-header");
+  var btnMain = document.querySelector(".btx-cooperation__type");
   var btnCls = document.querySelector(".popup__close");
   var scrollRmv = document.querySelector(".btx-body");
   var modalOverlay = document.querySelector(".modal-overlay");
@@ -205,5 +206,6 @@ $('.team-page__label').click(function () {
 
   if (modalForm) {
     btnHeader.addEventListener("click", openModal, false);
+    btnMain.addEventListener("click", openModal, false);
   }
 })();

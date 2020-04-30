@@ -42,7 +42,6 @@
 
 .button__profile-modal {
   padding: 15px 0;
-  margin-right: 15px;
 
   width: 30%;
 }
@@ -53,21 +52,8 @@
   background-color: $white;
 }
 
-.button__profile-modal--close {
-  width: 25%;
-
-  border: 0.5px solid rgba(255, 255, 255, 0.22);
-  border-radius: 5px;
-  background-color: transparent;
-}
-
-.button__profile-modal--close:hover {
-  background-color: $bg-dark;
-}
-
 .button__profile-modal:active,
-.button__btx-header:active,
-.button__profile-modal--close:active {
+.button__btx-header:active {
   opacity: 0.3;
 }
 
@@ -75,6 +61,10 @@
 @media (max-width: $tablet-width-max) {
   .button__btx-header {
     padding: 18px 145px;
+  }
+
+  .button__profile-modal {
+    width: 50%;
   }
 }
 
@@ -86,5 +76,13 @@
 
     padding: 12px 15px;
     width: 290px;
+  }
+
+  .button__profile-modal {
+    width: 100%;
+  }
+
+  .button__popup {
+    width: 90%;
   }
 }
