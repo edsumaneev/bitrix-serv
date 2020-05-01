@@ -24,3 +24,158 @@
 .track__track04 {
   background-image: url("../img/track04-img-bg@1x.png");
 }
+
+.track__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 120%;
+
+  color: $white;
+}
+
+.track__nav {
+  padding-top: 63px;
+  padding-bottom: 22px;
+  margin-bottom: 100px;
+}
+
+.track__list {
+  @include unlist();
+  @include container();
+  display: flex;
+  justify-content: space-between;
+}
+
+.track__link {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+
+  padding: 0;
+  margin: 0;
+
+  color: $white;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 120%;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.track__link--type1 {
+  opacity: 0.3;
+}
+
+.track__link:hover {
+  color: $bg-red;
+  opacity: 1;
+}
+
+.track__main {
+  @include container();
+}
+
+.track__title {
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62px;
+  line-height: 120%;
+}
+
+.track__text {
+  padding: 0;
+  margin: 0 0 30px 0;
+  width: 45%;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.track__text--bottom {
+  margin: 0;
+  width: auto;
+
+  opacity: 0.5;
+}
+
+.track__button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 18px 0;
+  margin: 30px 19px 0 0;
+  min-width: 236px;
+
+  color: $white;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  text-decoration: none;
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.track__button:hover {
+  border-color: $bg-red;
+  background-color: $bg-red;
+}
+
+.track__button--type1:hover {
+  color: $bg-red;
+
+  background-color: $white;
+}
+
+.track__button--type1 {
+  border-color: $bg-red;
+  background-color: $bg-red;
+}
+
+.track__button::before {
+  position: absolute;
+  content: "";
+  top: 35%;
+  left: 52px;
+  width: 12px;
+  height: 16px;
+
+  background: url("../img/track01-icon-dwnl@1x.svg");
+}
+
+.track__button--type1::before {
+  left: 40px;
+}
+
+.track__button--type1:hover::before {
+  background: url("../img/track01-icon-dwnl-hover@1x.svg");
+}
+
+.track__bottom {
+  @include unlist();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+}
+
+// @media (max-width: $tablet-width-max) {}
+
+@media (max-width: $mobile-width-max) {
+  .track__list {
+    width: 100%;
+  }
+}
