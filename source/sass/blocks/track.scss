@@ -37,8 +37,12 @@
   padding: 0 15px;
   margin: 0 auto;
   margin-top: -20px;
-  margin-bottom: 70px;
+  margin-bottom: 195px;
   width: auto;
+}
+
+.track__timeline--type1 {
+  margin-bottom: 70px;
 }
 
 .track__list {
@@ -113,6 +117,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 18px 0;
+  padding-left: 15px;
   margin: 30px 19px 27px 0;
   min-width: 236px;
 
@@ -149,7 +154,7 @@
   position: absolute;
   content: "";
   top: 35%;
-  left: 52px;
+  left: 67px;
   width: 12px;
   height: 16px;
 
@@ -157,7 +162,7 @@
 }
 
 .track__button--type1::before {
-  left: 40px;
+  left: 54px;
 }
 
 .track__button--type1:hover::before {
