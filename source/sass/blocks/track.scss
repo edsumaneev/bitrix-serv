@@ -25,20 +25,20 @@
   background-image: url("../img/track04-img-bg@1x.png");
 }
 
-.track__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 62px;
-  line-height: 120%;
-
-  color: $white;
+.track__nav {
+  padding-top: 73px;
+  padding-bottom: 22px;
+  margin: 0 auto;
+  width: 72.5%;
 }
 
-.track__nav {
-  padding-top: 63px;
-  padding-bottom: 22px;
-  margin-bottom: 100px;
+.track__timeline {
+  display: block;
+  padding: 0 15px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 70px;
+  width: auto;
 }
 
 .track__list {
@@ -83,7 +83,7 @@
 
 .track__title {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 25px 0;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -113,7 +113,7 @@
   display: inline-block;
   vertical-align: middle;
   padding: 18px 0;
-  margin: 30px 19px 0 0;
+  margin: 30px 19px 27px 0;
   min-width: 236px;
 
   color: $white;
@@ -169,13 +169,93 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 55%;
+  width: 52%;
 }
 
-// @media (max-width: $tablet-width-max) {}
+.track__bottom li:last-child {
+  margin-left: -63px;
+}
+
+@media (max-width: $tablet-width-max) {
+  .track__text {
+    width: 80%;
+  }
+
+  .track__bottom {
+    width: 70%;
+  }
+
+  .track__text--bottom {
+    width: 100%;
+  }
+
+  .track__bottom li:last-child {
+    margin-left: -20px;
+  }
+}
 
 @media (max-width: $mobile-width-max) {
+  .track__nav {
+    padding-top: 30px;
+  }
+
+  .track__link--type1 {
+    display: none;
+  }
+
   .track__list {
+    display: block;
     width: 100%;
+
+    text-align: center;
+  }
+
+  .track__title {
+    padding: 0;
+    margin: 0 0 15px 0;
+
+    font-size: 42px;
+
+    text-align: center;
+  }
+
+  .track__timeline {
+    padding: 0 20px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+
+    width: 80%;
+  }
+
+  .track__main {
+    width: 100%;
+  }
+
+  .track__text {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .track__button {
+    margin: 10px 5%;
+    width: auto;
+  }
+
+  .track__doc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .track__bottom {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+  }
+
+  .track__bottom li:last-child {
+    margin-left: 0;
   }
 }
