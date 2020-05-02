@@ -50,6 +50,8 @@
   @include container();
   display: flex;
   justify-content: space-between;
+
+  max-width: 1138px;
 }
 
 .track__link {
@@ -99,17 +101,25 @@
 .track__text {
   padding: 0;
   margin: 0 0 30px 0;
-  width: 45%;
+  width: 46%;
 
   font-size: 16px;
   line-height: 150%;
 }
 
-.track__text--bottom {
+.track__text--type1 {
   margin: 0;
   width: auto;
 
   opacity: 0.5;
+}
+
+.track__text--type2 {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 120%;
 }
 
 .track__button {
@@ -117,7 +127,6 @@
   display: inline-block;
   vertical-align: middle;
   padding: 18px 0;
-  padding-left: 15px;
   margin: 30px 19px 27px 0;
   min-width: 236px;
 
@@ -150,7 +159,11 @@
   background-color: $bg-red;
 }
 
-.track__button::before {
+.track__button--main {
+  padding-left: 15px;
+}
+
+.track__button--main::before {
   position: absolute;
   content: "";
   top: 35%;
@@ -163,6 +176,10 @@
 
 .track__button--type1::before {
   left: 54px;
+}
+
+.track__button--type2 {
+  background-color: transparent;
 }
 
 .track__button--type1:hover::before {
@@ -181,6 +198,27 @@
   margin-left: -63px;
 }
 
+.track__alert {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.track__team {
+  @include unlist();
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+.track__specialist {
+  min-width: 20%;
+  min-height: 123px;
+
+  background-color: $bg-gray;
+}
+
 @media (max-width: $tablet-width-max) {
   .track__text {
     width: 80%;
@@ -190,7 +228,7 @@
     width: 70%;
   }
 
-  .track__text--bottom {
+  .track__text--type1 {
     width: 100%;
   }
 
@@ -262,5 +300,14 @@
 
   .track__bottom li:last-child {
     margin-left: 0;
+  }
+
+  .track__team {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .track__specialist {
+    margin-bottom: 20px;
   }
 }
