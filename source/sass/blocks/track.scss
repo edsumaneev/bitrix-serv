@@ -200,7 +200,7 @@
 
 .track__alert {
   display: block;
-  margin: 0 auto;
+
   margin-bottom: 40px;
 }
 
@@ -309,5 +309,9 @@
 
   .track__specialist {
     margin-bottom: 20px;
+  }
+
+  .track__alert {
+    margin: 0 auto;
   }
 }
