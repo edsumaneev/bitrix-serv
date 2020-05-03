@@ -1,0 +1,27 @@
+.slick-active {
+  opacity: 1;
+}
+
+/* stylelint-disable */
+.slick-active+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-active+.slick-active+.slick-active {
+  opacity: 0.3;
+}
+
+.slick-active+.slick-active+.slick-active+.slick-active {
+  opacity: 0.2;
+}
+
+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+  opacity: 0.05;
+}
+
+/* stylelint-enable */
+.slider-portfolio__item {
+  max-width: 80%;
+
+  font-size: 32px;
+}

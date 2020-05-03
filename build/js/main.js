@@ -93,6 +93,35 @@ $('.profile-page__vert-slider').slick({
   }]
 });
 
+$('.slider-portfolio').slick({
+  // prevArrow: $(".btx-staff__prev"),
+  // nextArrow: $(".btx-staff__next"),
+  prevArrow: false,
+  nextArrow: false,
+
+  infinite: true,
+  speed: 350,
+
+  slidesToShow: 5,
+
+  slidesToScroll: 1,
+
+  responsive: [{
+    breakpoint: 1204,
+
+    settings: {
+      slidesToShow: 4,
+      slidesToScroll: 1,
+    }
+  }, {
+    breakpoint: 767,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    }
+  }]
+});
+
 $('.team-page__label').click(function () {
   var id = $(this).attr('data-tab'),
     content = $('.team-page__listing[data-tab="' + id + '"]');
