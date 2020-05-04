@@ -3,8 +3,10 @@
 // @import 'autoheight';
 // @import 'lazyload';
 // @import 'video';
+
 .owl-stage {
   display: flex;
+  justify-content: space-between;
 }
 
 .owl-next,
