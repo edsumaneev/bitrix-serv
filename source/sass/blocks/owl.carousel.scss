@@ -1,0 +1,13 @@
+// @import 'core';
+// @import 'animate';
+// @import 'autoheight';
+// @import 'lazyload';
+// @import 'video';
+.owl-stage {
+  display: flex;
+}
+
+.owl-next,
+.owl-prev {
+  display: none;
+}

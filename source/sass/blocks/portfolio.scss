@@ -1,21 +1,19 @@
-.slick-active {
-  opacity: 1;
-}
-
 /* stylelint-disable */
-.slick-active+.slick-active {
+
+
+.active+.active {
   opacity: 0.5;
 }
 
-.slick-active+.slick-active+.slick-active {
+.active+.active+.active {
   opacity: 0.3;
 }
 
-.slick-active+.slick-active+.slick-active+.slick-active {
+.active+.active+.active+.active {
   opacity: 0.2;
 }
 
-.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+.active+.active+.active+.active+.active {
   opacity: 0.05;
 }
 
