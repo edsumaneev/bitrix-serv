@@ -20,14 +20,20 @@
 /* stylelint-enable */
 .slider-portfolio {
   @include container();
+  display: flex;
+  justify-content: space-between;
+
   overflow-x: hidden;
 
   padding-left: 0;
   padding-right: 0;
+
+  width: 120%;
 }
 
 .slider-portfolio__item {
   text-align: center;
+  // width: max-content;
 
-  font-size: 32px;
+  font-size: 38px;
 }

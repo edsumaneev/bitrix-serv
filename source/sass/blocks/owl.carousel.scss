@@ -13,3 +13,7 @@
 .owl-prev {
   display: none;
 }
+
+.owl-item.active {
+  width: max-content;
+}
