@@ -7,8 +7,8 @@
   <meta name="Description" content="landing, name: Portfolio, pages : 1">
   <title>Portfolio</title>
 
+  <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -114,98 +114,209 @@
     </div>
   </header>
 
-  <main class="portfolio">
-    <div class="slider-portfolio">
-      <div class="btx-title slider-portfolio__item">Веб-разработка</div>
-      <div class="btx-title slider-portfolio__item">Графический дизайн</div>
-      <div class="btx-title slider-portfolio__item">Соц. сети</div>
-      <div class="btx-title slider-portfolio__item">Продвижение</div>
-      <div class="btx-title slider-portfolio__item">Маокетинг</div>
-    </div>
+  <main>
+    <ul class="slider-portfolio">
+      <li class="btx-title slider-portfolio__item">Веб-разработка</li>
+      <li class="btx-title slider-portfolio__item">Графический дизайн</li>
+      <li class="btx-title slider-portfolio__item">Соц. сети</li>
+      <li class="btx-title slider-portfolio__item">Продвижение</li>
+      <li class="btx-title slider-portfolio__item">Маркетинг</li>
+    </ul>
     <!-- <h1 class="btx-title">Наши сотрудники</h1> -->
-    <div class="team-page">
-      <div class="team-page__tabs">
-        <label class="team-page__label active" for="boss" data-tab="1" id="1">По типам</label>
-        <label class="team-page__label" for="dev" data-tab="2" id="2">По индустрии</label>
-        <label class="team-page__label" for="design" data-tab="3" id="3">По годам</label>
-        <label class="team-page__label" for="market" data-tab="4" id="4">По платформам</label>
+    <div class="portfolio">
+      <div class="portfolio__tabs">
+        <label class="portfolio__label active" for="bytype" data-tab="1" id="1">По типам</label>
+        <label class="portfolio__label" for="byindastry" data-tab="2" id="2">По индустрии</label>
+        <label class="portfolio__label" for="byyear" data-tab="3" id="3">По годам</label>
+        <label class="portfolio__label" for="byplatform" data-tab="4" id="4">По платформам</label>
 
-        <input id="boss" type="radio" name="staff" checked>
-        <input id="dev" type="radio" name="staff">
-        <input id="design" type="radio" name="staff">
-        <input id="market" type="radio" name="staff">
+        <input id="bytype" type="radio" name="staff" checked>
+        <input id="byindastry" type="radio" name="staff">
+        <input id="byyear" type="radio" name="staff">
+        <input id="byplatform" type="radio" name="staff">
       </div>
 
-      <div class="btx-staff team-page__listing active" data-tab="1">
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-          <a href="">Site</a>
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-      </div>
-      <div class="btx-staff team-page__listing" data-tab="2">
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-        <div class="btx-staff__item team-page__item">
-        </div>
-      </div>
+      <div class="portfolio__listing active" data-tab="1">
+        <div class="portfolio__subtabs">
+          <label class="portfolio__sublabel active" for="store" data-tab="5" id="5">Интернет-магазин</label>
+          <label class="portfolio__sublabel" for="corporate" data-tab="6" id="6">Корпоративные сайты</label>
+          <label class="portfolio__sublabel" for="lending" data-tab="7" id="7">Лендинги</label>
+          <label class="portfolio__sublabel" for="mobile" data-tab="8" id="8">Мобильные версии</label>
+          <label class="portfolio__sublabel" for="onepage" data-tab="9" id="9">Одностраничные сайты</label>
 
-      <div class="btx-staff team-page__listing" data-tab="3">
-        <div class="btx-staff__item team-page__item">
+          <input id="store" type="radio" name="subfilter" checked>
+          <input id="corporate" type="radio" name="subfilter">
+          <input id="lending" type="radio" name="subfilter">
+          <input id="mobile" type="radio" name="subfilter">
+          <input id="onepage" type="radio" name="subfilter">
         </div>
-        <div class="btx-staff__item team-page__item">
+
+        <div class="portfolio__space active" data-tab="5">
+          <div class="portfolio__item">
+            <img src="img/portfolio-img01-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img02-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img03-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img04-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img05-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img06-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+
+          <div class="portfolio__item">
+            <img src="img/portfolio-img07-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img08-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img09-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img10-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img11-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img12-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img13-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img14-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/portfolio-img15-d@1x.jpg" alt="Интернет-магазин" width="380" height="394">
+          </div>
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__space" data-tab="6">
+          <div class="portfolio__item">
+            <img src="img/staff-img-02.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-02.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-02.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-02.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-02.png" alt="">
+          </div>
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__space" data-tab="7">
+          <div class="portfolio__item">
+            <img src="img/staff-img-03.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-03.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-03.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-03.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-03.png" alt="">
+          </div>
         </div>
-        <div class="btx-staff__item team-page__item">
-          <a href="">Site</a>
+        <div class="portfolio__space" data-tab="8">
+          <div class="portfolio__item">
+            <img src="img/staff-img-04.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-04.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-04.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-04.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-04.png" alt="">
+          </div>
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__space" data-tab="9">
+          <div class="portfolio__item">
+            <img src="img/staff-img-05.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-05.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-05.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-05.png" alt="">
+          </div>
+          <div class="portfolio__item">
+            <img src="img/staff-img-05.png" alt="">
+          </div>
         </div>
-        <div class="btx-staff__item team-page__item">
+
+      </div>
+      <div class="portfolio__listing" data-tab="2">
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
         </div>
       </div>
-
-      <div class="btx-staff team-page__listing" data-tab="4">
-        <div class="btx-staff__item team-page__item">
+      <div class="portfolio__listing" data-tab="3">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+        <div class="portfolio__item">
         </div>
-        <div class="btx-staff__item team-page__item">
+      </div>
+      <div class="portfolio__listing" data-tab="4">
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
+        </div>
+        <div class="portfolio__item">
         </div>
       </div>
     </div>

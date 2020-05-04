@@ -1,39 +1,121 @@
-/* stylelint-disable */
+.portfolio {
+  @include container();
+  padding-top: 10px;
+  max-width: 1235px;
+}
 
+.portfolio__tabs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: $offset;
+  padding-right: $offset;
+  margin-bottom: 50px;
+  // width: 100%;
 
-.active+.active {
+  border-bottom: 1px solid $bg-gray;
+}
+
+.portfolio__subtabs {
+  display: flex;
+  justify-content: space-between;
+  // padding-left: $offset;
+  // padding-right: $offset;
+  // max-width: $desktop-width;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.portfolio__sublabel {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  margin: 0;
+  width: 15%;
+
+  font-weight: 300;
+  text-align: center;
+  color: #f8f8f8;
+
+  opacity: 0.8;
+
+  background-color: $bg-gray;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.portfolio__subtabs input,
+.portfolio__tabs input {
+  display: none;
+}
+
+.portfolio__label {
+  display: inline-block;
+  vertical-align: middle;
+
+  padding-bottom: 20px;
+
+  font-family: "Oswald",
+    "Arial",
+    sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+
+  text-align: center;
+
+  color: #f8f8f8;
+
+  opacity: 0.2;
+
+  cursor: pointer;
+}
+
+.portfolio__label:hover {
   opacity: 0.5;
 }
 
-.active+.active+.active {
-  opacity: 0.3;
+.portfolio__label.active {
+  border-bottom: 1px solid $outline-red;
+  opacity: 1;
 }
 
-.active+.active+.active+.active {
-  opacity: 0.2;
+.portfolio__space,
+.portfolio__listing {
+  display: none;
 }
 
-.active+.active+.active+.active+.active {
-  opacity: 0.05;
+.portfolio__space.active,
+.portfolio__listing.active {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  padding-left: $offset;
+  padding-right: $offset;
+  max-width: 1235px;
 }
 
-/* stylelint-enable */
-.slider-portfolio {
-  @include container();
+.portfolio__space.active {
   display: flex;
   justify-content: space-between;
-
-  overflow-x: hidden;
-
   padding-left: 0;
   padding-right: 0;
-
-  width: 120%;
+  width: 100%;
 }
 
-.slider-portfolio__item {
-  text-align: center;
-  // width: max-content;
+.portfolio__item {
+  padding: 0;
+  margin: 0 0 15px 0;
+  // justify-content: space-between;
+  width: 380px;
+  height: 394px;
 
-  font-size: 38px;
+  text-align: center;
+  background-color: $bg-gray;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
 }
