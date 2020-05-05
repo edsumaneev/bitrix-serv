@@ -40,8 +40,22 @@
   opacity: 0.8;
 
   background-color: $bg-gray;
+  border: 0.5px solid $bg-gray;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.portfolio__sublabel.active {
+  color: $white;
+
+  background-color: transparent;
+  border: 0.5px solid $bg-red;
+
+  opacity: 1;
+}
+
+.portfolio__sublabel:hover {
+  border: 0.5px solid $bg-red;
 }
 
 .portfolio__subtabs input,
