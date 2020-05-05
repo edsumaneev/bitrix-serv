@@ -101,21 +101,22 @@
 
 .portfolio__space.active {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   padding-left: 0;
   padding-right: 0;
   width: 100%;
 }
 
 .portfolio__item {
+  flex: 1 1 30%;
+
   padding: 0;
   margin: 0 0 15px 0;
-  // justify-content: space-between;
   min-height: 394px;
   min-width: 380px;
 
   text-align: center;
-  background-color: #292929;
+  // background-color: #292929;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
