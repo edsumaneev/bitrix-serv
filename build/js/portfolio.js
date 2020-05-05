@@ -33,7 +33,15 @@ $('.portfolio__label').click(function () {
 
   $('.portfolio__listing.active').removeClass('active');
   content.addClass('active');
+
+  $('.portfolio__sublabel.active').removeClass('active');
+  $(this).addClass('active');
+
+  $('.portfolio__space.active').removeClass('active');
+  $('.portfolio__space[data-tab="5"]').addClass('active');
+  $('.portfolio__space[data-tab="10"]').addClass('active');
 });
+
 // --------
 $('.portfolio__sublabel').click(function () {
   var id = $(this).attr('data-tab'),
