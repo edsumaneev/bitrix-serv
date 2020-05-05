@@ -111,12 +111,14 @@
   padding: 0;
   margin: 0 0 15px 0;
   // justify-content: space-between;
-  // width: 380px;
-  flex: 1 1 28%;
   min-height: 394px;
+  min-width: 380px;
 
   text-align: center;
-  background-color: $bg-gray;
-  border-radius: 3px;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  background-color: #292929;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio__img {
+  height: 100%;
 }
