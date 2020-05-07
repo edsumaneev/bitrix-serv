@@ -44,15 +44,17 @@
 /* stylelint-enable */
 .slider-portfolio {
   @include container();
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   padding-left: 0;
   padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
 
-  width: 120%;
+  // width: 120%;
 }
 
 .slider-portfolio__item {
@@ -69,16 +71,21 @@
 .slider-portfolio-inner .portfolio__sublabel {
   display: block;
   padding: 20px;
-  margin: 0 0 22px 0;
-  width: 30%;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  min-width: 35%;
 
   outline: none;
 }
 
+.slider-portfolio-inner:focus .portfolio__sublabel {
+  outline: none;
+}
 
 .slider-portfolio-inner {
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
 }
 
 // @media (max-width: $tablet-width-max) {}

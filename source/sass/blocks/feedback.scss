@@ -54,6 +54,16 @@
   color: #737373;
 }
 
+.feedback__link {
+  display: inline-block;
+  vertical-align: initial;
+  color: $bg-red;
+}
+
+.feedback__link:hover {
+  color: $white;
+}
+
 .feedback__question {
   display: inline-block;
   vertical-align: middle;
