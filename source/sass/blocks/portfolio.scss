@@ -107,7 +107,7 @@
   flex-wrap: wrap;
   // justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 
   padding-left: $offset;
   padding-right: $offset;
@@ -154,28 +154,4 @@
 .portfolio__link img {
   height: 100%;
   border-radius: 3px;
-}
-
-.portfolio__slider {
-  margin: 0 auto;
-  width: 100%;
-}
-
-.portfolio__slider .portfolio__sublabel {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 20px;
-  margin: 0 0 22px 0;
-  // width: 100px;
-
-  // font-weight: 300;
-  // text-align: center;
-  // color: #f8f8f8;
-
-  // opacity: 0.8;
-
-  // background-color: $bg-gray;
-  // border: 0.5px solid $bg-gray;
-  // border-radius: 3px;
-  // cursor: pointer;
 }

@@ -106,4 +106,9 @@
   display: none;
 }
 
+.slick-slide:active,
+.slick-active:active {
+  outline: none;
+}
+
 /* stylelint-enable */

@@ -57,6 +57,53 @@
   opacity: 0.3;
 }
 
+.button__feedback,
+.button__portfolio {
+  display: block;
+  padding: 20px 0;
+  margin: 0 auto;
+  min-width: 211px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+
+  border: 1px solid $bg-red;
+  border-radius: 5px;
+
+  background-color: transparent;
+}
+
+.button__portfolio {
+  margin-bottom: 90px;
+}
+
+.button__portfolio:hover {
+  background-color: $bg-red;
+}
+
+.button__feedback:active,
+.button__portfolio:active {
+  opacity: 0.5;
+  outline: none;
+}
+
+.button__feedback:focus,
+.button__portfolio:focus {
+  outline: none;
+}
+
+.button__feedback {
+  margin-left: 0;
+
+  background-color: $bg-red;
+}
+
+.button__feedback:hover {
+  background-color: transparent;
+}
 
 @media (max-width: $tablet-width-max) {
   .button__btx-header {

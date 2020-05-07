@@ -1176,7 +1176,7 @@
       <!-- Фильтр: По годам [3]. data-tab: 20-26 -->
       <div class="portfolio__listing" data-tab="3">
         <div class="portfolio__subtabs">
-          <div class="portfolio__slider">
+          <div class="slider-portfolio-inner">
             <div>
               <label class="portfolio__sublabel active" for="year01" data-tab="20" id="20">2012</label>
             </div>
@@ -1793,6 +1793,47 @@
 
         </div>
       </div>
+    </div>
+
+    <div>
+      <button class="button button__portfolio" type="button">показать еще</button>
+    </div>
+    <section class="feedback">
+      <div class="feedback__wrapper">
+        <div class="feedback__container">
+          <h1 class="btx-title feedback__title">Оставьте вашу заявку</h1>
+          <form action="#" method="POST">
+
+            <div class="feedback__row">
+              <label class="visually-hidden" for="name">Ваше ФИО</label>
+              <input class="feedback__input" type="text" placeholder="Ваше ФИО*" id="name" name="name" required>
+
+              <label class="visually-hidden" for="email-form">E-mail</label>
+              <input class="feedback__input" type="email" placeholder="E-mail*" id="email-form" name="email-form"
+                required>
+
+              <label class="visually-hidden" for="phone-form">Телефон</label>
+              <input class="feedback__input feedback__phone" type="tel" placeholder="Телефон*" id="phone-form"
+                name="phone-form" required>
+
+              <label class="visually-hidden" for="phone-form">Адрес сайта</label>
+              <input class="feedback__input" type="url" placeholder="Адрес сайта" id="name" name="name" required>
+            </div>
+
+            <textarea class="feedback__question" placeholder="Ваш вопрос" name="question" id="question"></textarea>
+            <label class="visually-hidden" for="question"></label>
+            <div class="feedback__row">
+              <button class="button button__feedback" type="submit" id="button-submit">Задать вопрос</button>
+              <h2 class="feedback__agreement">Нажимая на кнопку «Отправить», я даю согласие на
+                обработку персональных&nbsp;данных&nbsp;и&nbsp;соглашаюсь&nbsp;с&nbsp;<span><a href="#">политикой
+                    конфиденциальности</a></span>
+              </h2>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="btx-footer team-footer">

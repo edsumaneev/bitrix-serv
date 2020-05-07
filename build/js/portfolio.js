@@ -31,7 +31,7 @@ $('.slider-portfolio').slick({
   }]
 });
 
-$('.portfolio__slider').slick({
+$('.slider-portfolio-inner').slick({
   prevArrow: false,
   nextArrow: false,
   dots: false,

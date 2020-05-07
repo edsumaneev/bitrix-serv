@@ -66,9 +66,20 @@
   cursor: pointer;
 }
 
-// .slick-active:hover {
-//   opacity: 1;
-// }
+.slider-portfolio-inner .portfolio__sublabel {
+  display: block;
+  padding: 20px;
+  margin: 0 0 22px 0;
+  width: 30%;
+
+  outline: none;
+}
+
+
+.slider-portfolio-inner {
+  margin: 0 auto;
+  width: 70%;
+}
 
 // @media (max-width: $tablet-width-max) {}
 
