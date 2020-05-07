@@ -59,6 +59,68 @@
   border: 0.5px solid $bg-red;
 }
 
+.portfolio__sublabel--wordpress,
+.portfolio__sublabel--bitrix,
+.portfolio__sublabel--modx,
+.portfolio__sublabel--joomla,
+.portfolio__sublabel--tilda {
+  position: relative;
+  padding-left: 50px;
+  width: 13%;
+}
+
+.portfolio__sublabel--wordpress:hover,
+.portfolio__sublabel--bitrix:hover,
+.portfolio__sublabel--modx:hover,
+.portfolio__sublabel--joomla:hover,
+.portfolio__sublabel--tilda:hover {
+  color: $white;
+  opacity: 1;
+}
+
+.portfolio__sublabel--wordpress::before,
+.portfolio__sublabel--bitrix::before,
+.portfolio__sublabel--modx::before,
+.portfolio__sublabel--joomla::before,
+.portfolio__sublabel--tilda::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  left: 80px;
+  top: 17px;
+
+  background-repeat: no-repeat;
+}
+
+.portfolio__sublabel--wordpress::before {
+  left: 65px;
+
+  background-image: url("../img/icon-wordpress.png");
+}
+
+.portfolio__sublabel--bitrix::before {
+  left: 60px;
+
+  background-image: url("../img/icon-bitrix-hover.png");
+}
+
+.portfolio__sublabel--modx::before {
+  background-image: url("../img/icon-modx.png");
+}
+
+.portfolio__sublabel--joomla::before {
+  left: 70px;
+
+  background-image: url("../img/icon-joomla.png");
+}
+
+.portfolio__sublabel--tilda::before {
+  padding-left: 35px;
+
+  background-image: url("../img/icon-tilda.png");
+}
+
 .portfolio__subtabs input,
 .portfolio__tabs input {
   display: none;
