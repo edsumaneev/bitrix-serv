@@ -16,6 +16,7 @@
 </head>
 
 <body class="team-body detailed">
+  <div class="detailed__img-header"></div>
   <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
     <symbol id="git" viewBox="0 0 14 14">
       <!-- <circle cx="17.5" cy="17.5" r="17.5" /> -->
@@ -116,23 +117,37 @@
       </div>
     </div>
 
-    <div class="detailed__img-header">
-      <div class="detailed__bg-heder">
-        <h1 class="btx-title detailed__title">Wargaming.net</h1>
-        <div class="detailed__bottom-header">
-          <ul>
-            <li>
-              <a href="#request">Оставить заявку</a>
-            </li>
-            <li>
+    <div class="detailed__bg-heder">
+      <h1 class="btx-title detailed__title">Wargaming.net</h1>
+      <div class="detailed__bottom-header">
+        <ul class="detailed__lisi">
+          <li>
+            <a href="#request">Оставить заявку</a>
+          </li>
+          <li>
 
-            </li>
-            <li>
-              <p>Дата: <span>02.05.2020</span></p>
-              <p>Срок разработки: <span>30 дней</span> </p>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li>
+            <p>Дата: <span>02.05.2020</span></p>
+            <p>Срок разработки: <span>30 дней</span> </p>
+          </li>
+        </ul>
+        <ul class="detailed__lisi">
+          <li>
+            <img src="img/detailed-top-team@1x.png" alt="команда разработчиков" width="54" height="54">
+          </li>
+          <li>
+            <form action="mailto:yyy@yy.com" method="POST">
+              <p>Invision lab.</p>
+              <select name="current-team" id="dev">
+                <option value="1" selected>Неск. исполнителей</option>
+                <option value="2">2nd memb</option>
+                <option value="3">3d memb</option>
+                <option value="4">4th memb</option>
+              </select>
+            </form>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -144,7 +159,7 @@
     <section class="feedback">
       <div class="feedback__wrapper">
         <div class="feedback__container">
-          <h1 class="btx-title feedback__title" id="request">Оставьте вашу заявку</h1>
+          <h2 class="btx-title feedback__title" id="request">Оставьте вашу заявку</h2>
           <form action="#" method="POST">
 
             <div class="feedback__row">
@@ -168,11 +183,11 @@
             <label class="visually-hidden" for="question"></label>
             <div class="feedback__row">
               <button class="button button__feedback" type="submit" id="button-submit">Отправить</button>
-              <h2 class="feedback__agreement">Нажимая на кнопку «Отправить», я даю согласие на
+              <p class="feedback__agreement">Нажимая на кнопку «Отправить», я даю согласие на
                 обработку персональных&nbsp;данных&nbsp;и&nbsp;соглашаюсь&nbsp;с&nbsp;<span><a class="feedback__link"
                     href="#">политикой
                     конфиденциальности</a></span>
-              </h2>
+              </p>
             </div>
           </form>
         </div>
