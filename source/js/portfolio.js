@@ -77,6 +77,8 @@ $('.portfolio__label').click(function () {
   $('.portfolio__sublabel.active').removeClass('active');
   $(this).addClass('active');
 
+  $('.slider-portfolio-inner').slick('refresh');
+
   $('.portfolio__space.active').removeClass('active');
   $('.portfolio__space[data-tab="5"]').addClass('active');
   $('.portfolio__space[data-tab="10"]').addClass('active');
