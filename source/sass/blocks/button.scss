@@ -105,6 +105,30 @@
   background-color: transparent;
 }
 
+.button__detailed {
+  text-decoration: none;
+}
+
+.button__detailed--like {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 0 0 -10px;
+  width: 46px;
+  height: 46px;
+
+  font-size: 0;
+  border-radius: 50%;
+
+  outline: none;
+}
+
+.button__detailed:hover,
+.button__detailed--like:hover {
+  color: $bg-red;
+  background-color: $white;
+}
+
 @media (max-width: $tablet-width-max) {
   .button__btx-header {
     padding: 18px 145px;

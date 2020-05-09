@@ -15,6 +15,14 @@
   line-height: 100%;
 }
 
+.btx-title--detailed {
+  font-weight: 200;
+  font-size: 36px;
+  line-height: 130%;
+
+  color: #636363;
+}
+
 @media (max-width: $tablet-width-max) {
   .btx-title {
     margin-bottom: 30px;
