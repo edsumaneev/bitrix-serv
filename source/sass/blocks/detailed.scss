@@ -32,6 +32,8 @@
 
 .detailed__title {
   flex-basis: 100%;
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 50px;
 
   font-size: 64px;
@@ -75,6 +77,12 @@
 .detailed__info {
   padding: 0;
   margin: 0;
+
+  margin-bottom: 10px;
+}
+
+.detailed__info span {
+  opacity: 0.5;
 }
 
 .detailed__form select {
@@ -97,23 +105,16 @@
   height: 46px;
 }
 
-.detailed__list--like svg {
-  stroke: $white;
-}
-
-.detailed__list--like:hover svg {
-  stroke: $bg-red;
-}
-
 .detailed__technology {
-  // @include container();
+  @include container();
   @include unlist();
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding-left: $offset;
   padding-right: $offset;
   padding-bottom: 50px;
+  margin: 0 auto;
+  margin-bottom: 47px;
 
   max-width: $desktop-wrapper;
 
@@ -122,7 +123,7 @@
 
 .detailed__item {
   padding: 12px 0;
-  flex-basis: 10%;
+  flex-basis: 11.4%;
 
   text-align: center;
 
@@ -135,4 +136,39 @@
     0 22px 18px rgba(0, 0, 0, 0.04),
     0 42px 34px rgba(0, 0, 0, 0.05),
     0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.detailed__item--active {
+  background-color: $bg-red;
+}
+
+.detailed__article h2 {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 40px;
+}
+
+.detailed__article p {
+  padding: 0;
+  margin: 0 0 60px 0;
+
+  font-size: 16px;
+  line-height: 180%;
+  color: #6a6a6a;
+}
+
+.detailed__project {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-bottom: 30px;
+  margin-bottom: 100px;
+
+  border-bottom: 0.5px solid rgba($color: $white, $alpha: 0.2);
+}
+
+.detailed__article {
+  flex-basis: 70%;
 }

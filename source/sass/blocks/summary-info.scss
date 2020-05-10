@@ -1,0 +1,143 @@
+.summary-info {
+  flex-basis: 20%;
+  align-self: start;
+  box-sizing: border-box;
+
+  padding: 41px 25px 30px;
+
+  min-width: 315px;
+
+  background-color: #2b2a2b;
+  border-radius: 3px;
+}
+
+.summary-info__text {
+  padding: 0;
+  margin: 0 0 14px 0;
+}
+
+.summary-info__text span {
+  opacity: 0.5;
+}
+
+.summary-info__title {
+  position: relative;
+  padding: 0;
+  margin: 0 0 40px 0;
+
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 100%;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba($color: $white, $alpha: 0.2);
+}
+
+.summary-info__title--short::before,
+.summary-info__title::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+
+  width: 125px;
+  height: 0.5px;
+  background: rgba($color: $white, $alpha: 0.2);
+}
+
+.summary-info__title--short::before {
+  width: 165px;
+}
+
+.summary-info__name {
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  font-weight: bold;
+}
+
+.summary-info__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 20px;
+
+  color: $bg-red;
+  line-height: 100%;
+  text-decoration-line: underline;
+}
+
+.summary-info__link:hover {
+  color: rgba($color: $white, $alpha: 0.5);
+}
+
+.summary-info__stat {
+  margin-bottom: 60px;
+}
+
+.summary-info__like,
+.summary-info__view {
+  position: relative;
+  padding-left: 20px;
+
+  color: #616061;
+}
+
+.summary-info__like {
+  margin-right: 20px;
+}
+
+.summary-info__like::after,
+.summary-info__view::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 0;
+}
+
+.summary-info__like::after {
+  background: url("../img/summary-info-icon-like.png") 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.summary-info__view::after {
+  background: url("../img/summary-info-icon-view.png") 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.summary-info__list {
+  @include unlist();
+}
+
+.summary-info__item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.summary-info__participant {
+  padding: 0 0 7px 12px;
+  margin: -10px 0 0 0;
+}
+
+.summary-info__position {
+  flex-basis: 100%;
+  padding-left: 62px;
+  margin-top: -20px;
+
+  font-size: 12px;
+  line-height: 100%;
+
+  color: rgba($color: $white, $alpha: 0.5);
+}
+
+.summary-info__stat--screenshot {
+  padding: 0;
+  margin: 0 0 50px 0;
+
+  background: none;
+}

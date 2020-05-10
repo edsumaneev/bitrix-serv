@@ -109,6 +109,7 @@
   text-decoration: none;
 }
 
+.button__detailed--screenshot,
 .button__detailed--like {
   display: inline-block;
   vertical-align: middle;
@@ -121,6 +122,22 @@
   border-radius: 50%;
 
   outline: none;
+}
+
+.button__detailed--screenshot {
+  margin-bottom: 30px;
+  width: 68px;
+  height: 68px;
+}
+
+.button__detailed--screenshot svg,
+.button__detailed--like svg {
+  stroke: $white;
+}
+
+.button__detailed--screenshot:hover svg,
+.button__detailed--like:hover svg {
+  stroke: $bg-red;
 }
 
 .button__detailed:hover,

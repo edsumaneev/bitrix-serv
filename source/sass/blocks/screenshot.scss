@@ -1,0 +1,39 @@
+.screenshot {
+  @include container();
+  padding-bottom: 80px;
+  margin-bottom: 80px;
+
+  text-align: center;
+
+  border-bottom: 0.5px solid rgba($color: $white, $alpha: 0.2);
+}
+
+.screenshot__title {
+  display: block;
+  padding: 0;
+  margin: 0 0 15px 0;
+
+  color: $white;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+
+  letter-spacing: 0.05em;
+}
+
+.screenshot__title:hover {
+  color: rgba($color: $white, $alpha: 0.5);
+
+  text-decoration: underline;
+}
+
+.screenshot__date {
+  padding: 0;
+  margin: 0;
+
+  color: #616061;
+}
+
+.screenshot__img {
+  margin-bottom: 120px;
+}
