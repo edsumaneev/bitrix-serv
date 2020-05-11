@@ -37,3 +37,15 @@
 .screenshot__img {
   margin-bottom: 120px;
 }
+
+@media (max-width: $mobile-width-max) {
+  .screenshot {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .screenshot__img {
+    margin-bottom: 30px;
+  }
+}

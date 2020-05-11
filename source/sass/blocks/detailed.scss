@@ -67,11 +67,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 40%;
 }
 
 .detailed__list--dev {
-  width: 18%;
+  flex-basis: 18%;
 }
 
 .detailed__info {
@@ -171,4 +172,82 @@
 
 .detailed__article {
   flex-basis: 70%;
+}
+
+@media (max-width: $tablet-width-max) {
+  .detailed__top {
+    margin-bottom: 100px;
+  }
+
+  .detailed__bottom-header {
+    margin-bottom: 43px;
+
+    width: 100%;
+  }
+
+  .detailed__list {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .detailed__list--dev {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .detailed__list--dev li {
+    margin: 0 5px;
+  }
+
+  .detailed__technology {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .detailed__item {
+    margin: 0 2px 10px 2px;
+    min-width: 130px;
+  }
+
+  .detailed__article {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .detailed__top {
+    margin-bottom: 50px;
+  }
+
+  .detailed__bg-heder {
+    padding-bottom: 0;
+  }
+
+  .detailed__list li {
+    margin-bottom: 10px;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .detailed__title {
+    margin-bottom: 20px;
+
+    font-size: 50px;
+  }
+
+  .detailed__article {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .detailed__article p {
+    margin-bottom: 30px;
+  }
+
+  .detailed__project {
+    margin-bottom: 30px;
+    width: auto;
+  }
 }
