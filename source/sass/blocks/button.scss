@@ -154,6 +154,16 @@
   .button__profile-modal {
     width: 50%;
   }
+
+  .button__portfolio {
+    margin-bottom: 30px;
+  }
+
+  .button__feedback {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 50%;
+  }
 }
 
 @media (max-width: $mobile-width-max) {

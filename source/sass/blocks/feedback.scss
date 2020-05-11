@@ -99,3 +99,30 @@
 .feedback__question::placeholder {
   padding: 0 0 0 20px;
 }
+
+@media (max-width: $tablet-width-max) {
+  .feedback {
+    margin-bottom: 50px;
+  }
+
+  .feedback__question {
+    margin-bottom: 30px;
+  }
+
+  .feedback__agreement {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .feedback {
+    width: 100%;
+  }
+
+  .feedback__input {
+    margin-bottom: 15px;
+    width: 95%;
+  }
+}
