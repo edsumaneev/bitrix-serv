@@ -17,7 +17,7 @@
   }
 }
 
-.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-active {
+.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-slide {
   opacity: 0.2;
 
   &:hover {
@@ -25,7 +25,7 @@
   }
 }
 
-.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-slidee+.slick-slide {
   opacity: 0.05;
 
   &:hover {
@@ -33,7 +33,7 @@
   }
 }
 
-.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-active+.slick-active+.slick-active {
+.slider-portfolio .slick-active+.slick-active+.slick-active+.slick-slick-slide.slick-slick-slide+.slick-slick-slide {
   opacity: 0.03;
 
   &:hover {
@@ -41,7 +41,33 @@
   }
 }
 
+// =======================
+.slider-portfolio-inner .slick-current+.slick-active {
+  opacity: 0.4;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slider-portfolio-inner .slick-current+.slick-active+.slick-active {
+  opacity: 0.2;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.slider-portfolio-inner .slick-current+.slick-active+.slick-active+.slick-slide {
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
 /* stylelint-enable */
+
 .slider-portfolio {
   @include container();
   // display: flex;
@@ -71,20 +97,66 @@
   display: block;
   padding: 20px;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 15%;
   margin-bottom: 22px;
-  min-width: 35%;
+  width: 35%;
+
+  // opacity: 0.4;
+  // background-color: rgba($color: $bg-gray, $alpha: 0.5);
 
   outline: none;
 }
 
 .slider-portfolio-inner:focus .portfolio__sublabel {
+  opacity: 1;
+  background-color: transparent;
   outline: none;
 }
 
 .slider-portfolio-inner {
   margin: 0 auto;
   width: 75%;
+}
+
+.slider-portfolio-inner__prev,
+.slider-portfolio-inner__next {
+  position: absolute;
+  top: 23px;
+  margin: 0 auto;
+  width: 6px;
+  height: 12px;
+
+  font-size: 0;
+
+  outline: none;
+
+  border: hidden;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.slider-portfolio-inner__prev {
+  left: 43%;
+
+  background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;
+}
+
+.slider-portfolio-inner__next {
+  right: 44%;
+
+  transform: rotate(180deg);
+  background: url("../img/slider-arrow-1.svg") 50% 50% no-repeat;
+}
+
+.slider-portfolio-inner__prev:hover {
+  transform: rotate(180deg);
+  background: url("../img/slider-arrow-1-hover.svg") 50% 50% no-repeat;
+}
+
+.slider-portfolio-inner__next:hover {
+  transform: rotate(0deg);
+  background: url("../img/slider-arrow-1-hover.svg") 50% 50% no-repeat;
 }
 
 // @media (max-width: $tablet-width-max) {}

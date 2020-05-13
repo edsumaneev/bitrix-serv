@@ -32,14 +32,15 @@ $('.slider-portfolio').slick({
 });
 
 $('.slider-portfolio-inner').slick({
-  prevArrow: false,
-  nextArrow: false,
+  prevArrow: $(".slider-portfolio-inner__prev"),
+  nextArrow: $(".slider-portfolio-inner__next"),
   dots: false,
   infinite: true,
   speed: 350,
   focusOnSelect: true,
   // variableWidth: true,
   centerMode: true,
+  centerPadding: '40px',
   // определяем скорость перелистывания
   slidesToShow: 5,
   //количество слайдов для показа
