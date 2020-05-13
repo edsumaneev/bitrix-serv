@@ -159,7 +159,15 @@
   background: url("../img/slider-arrow-1-hover.svg") 50% 50% no-repeat;
 }
 
-// @media (max-width: $tablet-width-max) {}
+@media (max-width: $tablet-width-max) {
+  .slider-portfolio-inner__prev {
+    left: 40%;
+  }
+
+  .slider-portfolio-inner__next {
+    right: 41%;
+  }
+}
 
 @media (max-width: $mobile-width-max) {
   .slider-portfolio {
@@ -170,5 +178,13 @@
 
   .slider-portfolio__item {
     font-size: 24px;
+  }
+
+  .slider-portfolio-inner__prev {
+    left: 28%;
+  }
+
+  .slider-portfolio-inner__next {
+    right: 29%;
   }
 }
